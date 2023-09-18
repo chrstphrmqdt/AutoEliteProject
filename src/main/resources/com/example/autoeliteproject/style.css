@@ -1,0 +1,124 @@
+.top-bar{
+    -fx-background-color: rgba(26, 26, 26, 0.7);
+}
+
+.background-image{
+    -fx-background-image: url('file:C:/Users/crit/IdeaProjects/AutoEliteProject/src/main/resources/com/example/autoeliteproject/images/bgcar2.jpg');
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+.transparent-background{
+    -fx-background-color: transparent;
+}
+
+.search_bar{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 25;
+
+}
+.text-field{
+    -fx-background-color: transparent;
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-border-color: #9d9d9d;
+    -fx-border-width: 1px;
+    -fx-text-fill: #000000;
+}
+
+/* Modern Button Style */
+.button-explorenow {
+    -fx-background-color: #ff2222; /* Background color */
+    -fx-text-fill: white; /* Text color */
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 30px; /* Rounded corners for a smoother look */
+    -fx-cursor: hand; /* Cursor style on hover */
+    -fx-effect: dropshadow(three-pass-box, #333333, 10, 0, 0, 0); /* Add a subtle drop shadow */
+    -fx-background-insets: 0; /* Remove default button padding */
+    -fx-background-radius: 30px; /* Match the border radius */
+}
+
+/* Hover effect */
+.button-explorenow:hover {
+    -fx-background-color: #ff4343; /* Lighter background color on hover */
+    -fx-scale-x: 1.05; /* Add a subtle scaling effect on hover */
+    -fx-scale-y: 1.05;
+}
+/* Circular Button for "All" button*/
+.button-all {
+    -fx-background-color: transparent; /* Background color */
+    -fx-text-fill: rgb(0, 0, 0); /* Text color */
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 50%; /* Rounded corners for a smoother look */
+    -fx-cursor: hand; /* Cursor style on hover */
+    -fx-background-insets: 0; /* Remove default button padding */
+    -fx-background-radius: 30px; /* Match the border radius */
+}
+.button-all:hover {
+    -fx-background-color: #ffffff; /* Lighter background color on hover */
+    -fx-text-fill: #000000; /* Text color */
+    -fx-effect: dropshadow(three-pass-box, #000000, 10, 0, 0, 0); /* Add a subtle drop shadow */
+    -fx-scale-x: 1.05; /* Add a subtle scaling effect on hover */
+    -fx-scale-y: 1.05;
+}
+
+/* Transparent "More Details" Button */
+.button-more-details {
+    -fx-background-color: transparent; /* Transparent background */
+    -fx-text-fill: #ff5722; /* White text color */
+    -fx-font-size: 16px;
+    -fx-font-weight: regular;
+    -fx-padding: 10px 20px; /* Padding for button size */
+    -fx-border-radius: 5px; /* Slightly rounded corners */
+    -fx-cursor: hand; /* Cursor style on hover */
+}
+
+/* Hover effect */
+.button-more-details:hover {
+    -fx-effect: dropshadow(three-pass-box, #ff815e, 8, 0, 0, 0); /* Slightly larger drop shadow on hover */
+}
+/* Transparent "More Details" Button */
+/* Car Inventory Card */
+.car-card {
+    -fx-background-color: white; /* Background color */
+    -fx-border-radius: 5px; /* Rounded corners */
+    -fx-border-color: #ddd; /* Border color */
+    -fx-border-width: 1px; /* Border width */
+    -fx-padding: 20px; /* Padding inside the card */
+    -fx-font-size: 14px;
+    -fx-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+    -fx-cursor: hand; /* Cursor style on hover */
+    -fx-effect: dropshadow(three-pass-box, #333333, 3, 0, 0, 0); /* Drop shadow effect */
+}
+
+/* Hover effect */
+.car-card:hover {
+    -fx-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4); /* Slightly larger box shadow on hover for elevation */
+    -fx-scale-x: 1.02; /* Add a subtle scaling effect on hover for a 3D effect */
+    -fx-scale-y: 1.02;
+}
+
+/* Car Title */
+.car-title {
+    -fx-font-weight: bold;
+    -fx-text-fill: #333; /* Text color */
+    -fx-font-size: 25px;
+}
+
+/* Car Price */
+.car-price {
+    -fx-font-size: 20px;
+    -fx-font-weight: regular;
+    -fx-text-fill: #FF5722; /* Price color */
+}
+
+/* Car Image */
+.car-image {
+    -fx-max-width: 100%; /* Ensure the image doesn't exceed the card width */
+    -fx-max-height: 200px; /* Define the maximum height of the image */
+    -fx-clip: rect(0px, 300px, 200px, 0px); /* Clip the image to fit within the card */
+}
