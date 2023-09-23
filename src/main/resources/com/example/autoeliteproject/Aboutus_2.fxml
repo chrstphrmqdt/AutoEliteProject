@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="880.0" prefWidth="1605.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <HBox alignment="CENTER" prefHeight="115.0" prefWidth="1605.0" stylesheets="@style.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="70.0" fitWidth="111.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/Asset%204.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="200.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="115.0" prefWidth="745.0">
+               <children>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" styleClass="about-us-button" stylesheets="@style.css" text="Home" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic Bold" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="50.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="45.0" prefWidth="110.0" styleClass="about-us-button" stylesheets="@style.css" text="About Us" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic Bold" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="50.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" styleClass="about-us-button" stylesheets="@style.css" text="Cars" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic Bold" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="50.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" styleClass="about-us-button" stylesheets="@style.css" text="F.A.Q." textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic Bold" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="50.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="116.0" styleClass="about-us-button" stylesheets="@style.css" text="Contacts" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic Bold" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button alignment="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" styleClass="about-us-button" stylesheets="@style.css" text="Login" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic Bold" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+                  <Separator maxHeight="40.0" minHeight="40.0" orientation="VERTICAL" prefHeight="40.0" />
+                  <Button alignment="CENTER" mnemonicParsing="false" prefHeight="45.0" prefWidth="113.0" styleClass="about-us-button" stylesheets="@style.css" text="Register" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic Bold" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <HBox.margin>
+                  <Insets left="200.0" />
+               </HBox.margin>
+            </HBox>
+         </children>
+         <styleClass>
+            <String fx:value="background-image" />
+            <String fx:value="hbox-bottom-border" />
+         </styleClass>
+      </HBox>
+   </top>
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="background-image3" stylesheets="@style.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" stylesheets="@style.css">
+               <children>
+                  <Button mnemonicParsing="false" styleClass="about-us-button" stylesheets="@style.css" text="Our Story" textFill="WHITE" />
+                  <Button mnemonicParsing="false" styleClass="about-us-button" stylesheets="@style.css" text="Meet the Team" />
+                  <Button mnemonicParsing="false" styleClass="about-us-button" stylesheets="@style.css" text="Join Our Mission" />
+                  <Button mnemonicParsing="false" styleClass="about-us-button" stylesheets="@style.css" text="Customer Testimonials" />
+               </children>
+            </HBox>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Asset%204.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label styleClass="text-overlay" stylesheets="@style.css" text="Behind every great app is a team of real people. Get to know the friendly faces behind AutoElite." textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Century Gothic" size="20.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="295.0" prefWidth="1605.0">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="308.0" prefWidth="230.0" styleClass="card-container" stylesheets="@style.css">
+                     <children>
+                        <ImageView fitHeight="233.0" fitWidth="230.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" stylesheets="@style.css" text="Hafeez Palis" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" stylesheets="@style.css" text="Project Manager" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="325.0" prefWidth="320.0" styleClass="card-container" stylesheets="@style.css">
+                     <children>
+                        <ImageView fitHeight="233.0" fitWidth="230.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="32.0" prefWidth="315.0" stylesheets="@style.css" text="Christopher Maquidato" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" stylesheets="@style.css" text="Front End Developer" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="308.0" prefWidth="230.0" styleClass="card-container" stylesheets="@style.css">
+                     <children>
+                        <ImageView fitHeight="233.0" fitWidth="230.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" stylesheets="@style.css" text="Ben Tagud" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" stylesheets="@style.css" text="Back End Developer" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="308.0" prefWidth="230.0" styleClass="card-container" stylesheets="@style.css">
+                     <children>
+                        <ImageView fitHeight="233.0" fitWidth="230.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" stylesheets="@style.css" text="Kim Abucay" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" stylesheets="@style.css" text="Database Manager" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="880.0" prefWidth="1605.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <HBox alignment="CENTER" prefHeight="115.0" prefWidth="1605.0" styleClass="background-image" stylesheets="@style.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="70.0" fitWidth="111.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/Asset%204.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="200.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="115.0" prefWidth="745.0">
+               <children>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" styleClass="about-us-button" stylesheets="@style.css" text="Home" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic Bold" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="50.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="45.0" prefWidth="112.0" styleClass="about-us-button" stylesheets="@style.css" text="About Us" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic Bold" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="50.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" styleClass="about-us-button" stylesheets="@style.css" text="Cars" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic Bold" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="50.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" styleClass="about-us-button" stylesheets="@style.css" text="F.A.Q." textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic Bold" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="50.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="116.0" styleClass="about-us-button" stylesheets="@style.css" text="Contacts" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic Bold" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button alignment="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" styleClass="about-us-button" stylesheets="@style.css" text="Login" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic Bold" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+                  <Separator maxHeight="40.0" minHeight="40.0" orientation="VERTICAL" prefHeight="40.0" />
+                  <Button alignment="CENTER" mnemonicParsing="false" prefHeight="45.0" prefWidth="111.0" styleClass="about-us-button" stylesheets="@style.css" text="Register" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic Bold" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <HBox.margin>
+                  <Insets left="200.0" />
+               </HBox.margin>
+            </HBox>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox alignment="CENTER_LEFT" prefHeight="560.0" prefWidth="312.0" BorderPane.alignment="TOP_RIGHT">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" stylesheets="@style.css" text="Table of Contents" textAlignment="CENTER">
+               <font>
+                  <Font name="Century Gothic Bold" size="27.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="20.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="20.0" right="10.0" />
+               </padding>
+            </Label>
+            <Button mnemonicParsing="false" styleClass="button-FAQ" stylesheets="@style.css" text="Getting Started">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" styleClass="button-FAQ" stylesheets="@style.css" text="Buying Cars">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" styleClass="button-FAQ" stylesheets="@style.css" text="Selling Cars">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" styleClass="button-FAQ" stylesheets="@style.css" text="Account and Security">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="20.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="200.0" />
+         </padding>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane prefHeight="765.0" prefWidth="1242.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="30.0" text="Frequently Asked Questions">
+               <font>
+                  <Font name="Century Gothic Bold" size="50.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="96.0" text="Can't find an answer? Call us at (63) 936-916-0887 or email us at support@autoelite.com">
+               <font>
+                  <Font name="Century Gothic" size="16.0" />
+               </font>
+            </Label>
+            <VBox fx:id="GettingStarted" layoutX="14.0" layoutY="136.0" prefHeight="256.0" prefWidth="790.0">
+               <children>
+                  <Accordion prefHeight="153.0" prefWidth="1293.0">
+                     <panes>
+                        <TitledPane text="How do I create an account?">
+                           <content>
+                              <VBox prefHeight="0.0" prefWidth="1291.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Creating an account is easy! Click on the 'Sign Up' button at the top right corner of our homepage">
+                                       <font>
+                                          <Font name="Century Gothic" size="19.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="fill in your details, and you're ready to go.">
+                                       <font>
+                                          <Font name="Century Gothic" size="19.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                           </content>
+                           <font>
+                              <Font name="Century Gothic Bold" size="21.0" />
+                           </font>
+                        </TitledPane>
+                        <TitledPane text="What are the basic features of our car selling app?">
+                           <content>
+                              <VBox prefHeight="62.0" prefWidth="1291.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Our app allows you to list your cars for sale, search for cars to buy, message buyers and sellers">
+                                       <font>
+                                          <Font name="Century Gothic" size="19.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="and easily manage your listings and messages from your dashboard.">
+                                       <font>
+                                          <Font name="Century Gothic" size="19.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                           </content>
+                           <font>
+                              <Font name="Century Gothic Bold" size="21.0" />
+                           </font>
+                        </TitledPane>
+                        <TitledPane text="How can I list my car for sale?">
+                           <content>
+                              <VBox prefHeight="62.0" prefWidth="1291.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="To list your car, log in to your account, click 'Sell Your Car,' fill in the required details">
+                                       <font>
+                                          <Font name="Century Gothic" size="19.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="add photos, set a price, and your car will be listed for potential buyers to see.">
+                                       <font>
+                                          <Font name="Century Gothic" size="19.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                           </content>
+                           <font>
+                              <Font name="Century Gothic Bold" size="21.0" />
+                           </font>
+                        </TitledPane>
+                     </panes>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </Accordion>
+               </children>
+            </VBox>
+            <VBox fx:id="BuyingCars" layoutX="14.0" layoutY="136.0" prefHeight="280.0" prefWidth="714.0" visible="false">
+               <children>
+                  <Accordion prefHeight="153.0" prefWidth="1293.0">
+                     <panes>
+                        <TitledPane text="How do I search for cars on the platform?">
+                           <content>
+                              <VBox prefHeight="0.0" prefWidth="1291.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Click 'Cars' at the top, use the search bar to enter keywords like make, model, price, or">
+                                       <font>
+                                          <Font name="Century Gothic" size="19.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="location, and refine results with filters.">
+                                       <font>
+                                          <Font name="Century Gothic" size="19.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                           </content>
+                           <font>
+                              <Font name="Century Gothic Bold" size="21.0" />
+                           </font>
+                        </TitledPane>
+                        <TitledPane text="What payment methods are accepted?">
+                           <content>
+                              <VBox prefHeight="62.0" prefWidth="1291.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="We support a variety of payment methods, including credit/debit cards, bank transfers,">
+                                       <font>
+                                          <Font name="Century Gothic" size="19.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="and cash payments. The available payment methods may vary depending on the seller's">
+                                       <font>
+                                          <Font name="Century Gothic" size="19.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="preferences.">
+                                       <font>
+                                          <Font name="Century Gothic" size="19.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                           </content>
+                           <font>
+                              <Font name="Century Gothic Bold" size="21.0" />
+                           </font>
+                        </TitledPane>
+                        <TitledPane text="Can I request a test drive?">
+                           <content>
+                              <VBox prefHeight="62.0" prefWidth="1291.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Yes, you can! When you find a car you're interested in, contact the seller through our ">
+                                       <font>
+                                          <Font name="Century Gothic" size="19.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="messaging system to discuss a test drive. Arrange a convenient time and location with the">
+                                       <font>
+                                          <Font name="Century Gothic" size="19.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="seller.">
+                                       <font>
+                                          <Font name="Century Gothic" size="19.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                           </content>
+                           <font>
+                              <Font name="Century Gothic Bold" size="21.0" />
+                           </font>
+                        </TitledPane>
+                     </panes>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </Accordion>
+               </children>
+            </VBox>
+            <VBox fx:id="SellingCars" layoutX="14.0" layoutY="137.0" prefHeight="280.0" prefWidth="825.0" visible="false">
+               <children>
+                  <Accordion prefHeight="153.0" prefWidth="1293.0">
+                     <panes>
+                        <TitledPane text="How do I set a price for my car listing?">
+                           <content>
+                              <VBox prefHeight="0.0" prefWidth="1291.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="To set a price for your car listing, go to your dashboard and click on the 'Manage Listings' ">
+                                       <font>
+                                          <Font name="Century Gothic" size="19.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="section. Find the car you want to list, click 'Edit,' and you can specify the price, currency, and">
+                                       <font>
+                                          <Font name="Century Gothic" size="19.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="any other details related to the pricing.">
+                                       <font>
+                                          <Font name="Century Gothic" size="19.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                           </content>
+                           <font>
+                              <Font name="Century Gothic Bold" size="21.0" />
+                           </font>
+                        </TitledPane>
+                        <TitledPane text="What should I include in my car description?">
+                           <content>
+                              <VBox prefHeight="62.0" prefWidth="1291.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="A detailed car description helps attract potential buyers. Include information such as ">
+                                       <font>
+                                          <Font name="Century Gothic" size="19.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="make, model, year, mileage, condition, features, and any additional history or maintenance">
+                                       <font>
+                                          <Font name="Century Gothic" size="19.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="records. High-quality photos are also recommended.">
+                                       <font>
+                                          <Font name="Century Gothic" size="19.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                           </content>
+                           <font>
+                              <Font name="Century Gothic Bold" size="21.0" />
+                           </font>
+                        </TitledPane>
+                        <TitledPane text="How can I communicate with potential buyers?">
+                           <content>
+                              <VBox prefHeight="62.0" prefWidth="1291.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="You can communicate with potential buyers through our secure messaging system. When ">
+                                       <font>
+                                          <Font name="Century Gothic" size="19.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="a user expresses interest in your listing, you'll receive a message notification. Respond">
+                                       <font>
+                                          <Font name="Century Gothic" size="19.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="promptly to answer their questions and arrange viewings or negotiations.">
+                                       <font>
+                                          <Font name="Century Gothic" size="19.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                           </content>
+                           <font>
+                              <Font name="Century Gothic Bold" size="21.0" />
+                           </font>
+                        </TitledPane>
+                     </panes>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </Accordion>
+               </children>
+            </VBox>
+            <VBox fx:id="AccountSec" layoutX="14.0" layoutY="138.0" prefHeight="280.0" prefWidth="795.0" visible="false">
+               <children>
+                  <Accordion prefHeight="153.0" prefWidth="1293.0">
+                     <panes>
+                        <TitledPane text="How do I reset my password?">
+                           <content>
+                              <VBox prefHeight="0.0" prefWidth="1291.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="To reset your password, go to the login page and click on the 'Forgot Password' link. ">
+                                       <font>
+                                          <Font name="Century Gothic" size="19.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Follow the instructions to receive a password reset email. Click the link in the email, and">
+                                       <font>
+                                          <Font name="Century Gothic" size="19.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="you'll be able to create a new password for your account.">
+                                       <font>
+                                          <Font name="Century Gothic" size="19.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                           </content>
+                           <font>
+                              <Font name="Century Gothic Bold" size="21.0" />
+                           </font>
+                        </TitledPane>
+                        <TitledPane text=" Is my personal information safe?">
+                           <content>
+                              <VBox prefHeight="62.0" prefWidth="1291.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Yes, we take your privacy and security seriously. Your personal information is encrypted ">
+                                       <font>
+                                          <Font name="Century Gothic" size="19.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="and stored securely. We do not share your information with third parties without your">
+                                       <font>
+                                          <Font name="Century Gothic" size="19.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="consent. Please review our Privacy Policy for more details.">
+                                       <font>
+                                          <Font name="Century Gothic" size="19.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                           </content>
+                           <font>
+                              <Font name="Century Gothic Bold" size="21.0" />
+                           </font>
+                        </TitledPane>
+                        <TitledPane text="How can I update my contact details?">
+                           <content>
+                              <VBox prefHeight="62.0" prefWidth="1291.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="You can update your contact details by logging into your account and going to the 'Profile' ">
+                                       <font>
+                                          <Font name="Century Gothic" size="19.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="or 'Account Settings' section. From there, you can edit your email address, phone number,">
+                                       <font>
+                                          <Font name="Century Gothic" size="19.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="and other contact information as needed.">
+                                       <font>
+                                          <Font name="Century Gothic" size="19.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                           </content>
+                           <font>
+                              <Font name="Century Gothic Bold" size="21.0" />
+                           </font>
+                        </TitledPane>
+                     </panes>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </Accordion>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

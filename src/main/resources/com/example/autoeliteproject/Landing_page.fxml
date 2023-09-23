@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
@@ -13,7 +14,7 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="880.0" prefWidth="1605.0" styleClass="background-image" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <top>
-      <HBox alignment="CENTER" prefHeight="115.0" prefWidth="1605.0" styleClass="transparent-background" stylesheets="@style.css" BorderPane.alignment="CENTER">
+      <HBox alignment="CENTER" prefHeight="115.0" prefWidth="1605.0" stylesheets="@style.css" BorderPane.alignment="CENTER">
          <children>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                <children>
@@ -96,6 +97,10 @@
                </HBox.margin>
             </HBox>
          </children>
+         <styleClass>
+            <String fx:value="transparent-background" />
+            <String fx:value="hbox-bottom-border" />
+         </styleClass>
       </HBox>
    </top>
    <center>
@@ -114,7 +119,7 @@
                   <Font name="Century Gothic" size="27.0" />
                </font>
             </Label>
-            <Button mnemonicParsing="false" styleClass="button-explorenow" stylesheets="@style.css" text="Explore Now">
+            <Button mnemonicParsing="false" styleClass="button-explorenow" stylesheets="@style.css" text="EXPLORE NOW">
                <font>
                   <Font name="Century Gothic Bold" size="28.0" />
                </font>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="621.0" prefWidth="1033.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <HBox prefHeight="621.0" prefWidth="1021.0" styleClass="login-form-bgcolor" stylesheets="@style.css" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="694.0" fitWidth="516.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/bglogin.jpg" />
+               </image>
+            </ImageView>
+            <VBox alignment="CENTER" prefHeight="695.0" prefWidth="553.0" stylesheets="@style.css">
+               <children>
+                  <ImageView fitHeight="72.0" fitWidth="153.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/Asset%204.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label text="Sign Up" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic Bold" size="38.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="62.0" prefWidth="517.0">
+                     <children>
+                        <TextField prefHeight="25.0" prefWidth="295.0" promptText="Username" styleClass="text-field-login" stylesheets="@style.css">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="62.0" prefWidth="517.0">
+                     <children>
+                        <TextField prefHeight="25.0" prefWidth="295.0" promptText="Email Address" styleClass="text-field-login" stylesheets="@style.css">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="62.0" prefWidth="517.0">
+                     <children>
+                        <PasswordField prefHeight="25.0" prefWidth="295.0" promptText="Password" styleClass="text-field-login" stylesheets="@style.css">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </PasswordField>
+                     </children>
+                  </HBox>
+                  <CheckBox mnemonicParsing="false" styleClass="rememberme-checkbox" stylesheets="@style.css" text="I have read and accept the Privacy Policy" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </CheckBox>
+                  <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="205.0" styleClass="login-button" stylesheets="@style.css" text="Create your account">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin></Button>
+                  <Button mnemonicParsing="false" styleClass="donthaveacc-button" stylesheets="@style.css" text="Already have an account ? Log in">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin></Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>
