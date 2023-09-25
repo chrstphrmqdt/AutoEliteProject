@@ -5,26 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af59d6c1-98e8-4965-b0b1-d63e7c19a7f3" name="Changes" comment="initial">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/FAQController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/HomePageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/NavbarController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/SignupController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/contactsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/navbar2Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/Homepage.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/navbar.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/navbar2.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/honda-civic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/icons8-arrow-50 (1) - Copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/icons8-arrow-50 (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/icons8-arrow-50.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/viewCars.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/LandingPageController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/CarInventoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/viewcarsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/CardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/carcardsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/HomePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/homeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/loginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/NavbarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/navbarController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/SignupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/signupController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/Aboutus_1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/Aboutus_1.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/Aboutus_2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/Aboutus_2.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/Aboutus_3.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/Aboutus_3.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/Aboutus_4.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/CarInventory_page.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/CarInventory_page.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/Landing_page.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/login_form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/login_form.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/CarInventory_page.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/CarsCard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/carCards.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/Homepage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/homepage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/login_form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/navbar.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/navbar.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/signup_form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/signup.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -111,7 +113,7 @@
       <workItem from="1695421922977" duration="5371000" />
       <workItem from="1695547589350" duration="1392000" />
       <workItem from="1695549280576" duration="5684000" />
-      <workItem from="1695596621831" duration="11976000" />
+      <workItem from="1695596621831" duration="15686000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <option name="closed" value="true" />
@@ -121,7 +123,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695429029454</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="initial">
+      <option name="closed" value="true" />
+      <created>1695609604736</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1695609604736</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

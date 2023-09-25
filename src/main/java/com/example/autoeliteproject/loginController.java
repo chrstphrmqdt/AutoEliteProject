@@ -9,10 +9,8 @@ import javafx.scene.control.CheckBox;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-import java.io.IOException;
-
-public class LoginController {
-    private NavbarController navbarController;
+public class loginController {
+    private com.example.autoeliteproject.navbarController navbarController;
 
 
     @FXML
@@ -69,8 +67,8 @@ public class LoginController {
     @FXML
     private void handleBackToHomeButtonClick() {
         try {
-            // Load the Homepage.fxml file
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Homepage.fxml"));
+            // Load the homepage.fxml file
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("homepage.fxml"));
             Parent root = fxmlLoader.load();
 
             // Create a new scene with the loaded root

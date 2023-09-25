@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class NavbarController {
+public class navbarController {
 
     @FXML
     private Button aboutusBtn;
@@ -51,22 +51,22 @@ public class NavbarController {
 
     @FXML
     private void handleHomeButtonClick() {
-        loadScene("Homepage.fxml");
+        loadScene("homepage.fxml");
     }
 
     @FXML
     private void handleLoginButtonClick() {
-        loadScene("login_form.fxml");
+        loadScene("login.fxml");
     }
 
     @FXML
     private void handleSignupButtonClick() {
-        loadScene("signup_form.fxml");
+        loadScene("signup.fxml");
     }
 
     @FXML
     private void handleViewCarsButtonClick() {
-        loadScene("CarInventory_page.fxml");
+        loadScene("viewCars.fxml");
     }
 
     // Helper method to load and display an FXML scene

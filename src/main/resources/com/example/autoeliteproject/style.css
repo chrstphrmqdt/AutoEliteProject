@@ -104,25 +104,22 @@
 
 /* Hover effect */
 .button-more-details:hover {
-    -fx-effect: dropshadow(three-pass-box, #ff815e, 8, 0, 0, 0); /* Slightly larger drop shadow on hover */
+    -fx-font-weight: bold;
 }
 /* Transparent "More Details" Button */
 /* Car Inventory Card */
 .car-card {
     -fx-background-color: white; /* Background color */
-    -fx-border-radius: 5px; /* Rounded corners */
-    -fx-border-color: #ddd; /* Border color */
+    -fx-border-radius: 15px; /* Rounded corners */
     -fx-border-width: 1px; /* Border width */
     -fx-padding: 20px; /* Padding inside the card */
     -fx-font-size: 14px;
-    -fx-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
     -fx-cursor: hand; /* Cursor style on hover */
-    -fx-effect: dropshadow(three-pass-box, #333333, 3, 0, 0, 0); /* Drop shadow effect */
 }
 
 /* Hover effect */
 .car-card:hover {
-    -fx-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4); /* Slightly larger box shadow on hover for elevation */
+    -fx-effect: dropshadow(three-pass-box, #333333, 10, 0, 0, 0); /* Add a subtle drop shadow */
     -fx-scale-x: 1.02; /* Add a subtle scaling effect on hover for a 3D effect */
     -fx-scale-y: 1.02;
 }
@@ -137,7 +134,7 @@
 /* Car Price */
 .car-price {
     -fx-font-size: 20px;
-    -fx-font-weight: regular;
+    -fx-font-weight: bold;
     -fx-text-fill: #FF5722; /* Price color */
 }
 
@@ -389,4 +386,7 @@
 .nav-bar2{
     /* make transparent bg */
     -fx-background-color: rgb(21, 21, 21);
+}
+.carinventory-bg{
+    -fx-background-color: rgb(236, 236, 236);
 }

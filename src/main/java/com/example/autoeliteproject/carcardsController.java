@@ -3,26 +3,24 @@ package com.example.autoeliteproject;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.VBox;
 
-
-public class CardController {
-    @FXML
-    private VBox Inventorybox;
+public class carcardsController {
 
     @FXML
-    private Button carinventorydetails;
+    private ImageView carImg;
 
     @FXML
-    private ImageView carinventoryimg;
+    private VBox carcardVb;
 
     @FXML
-    private Label carinventoryname;
+    private Label carnameLb;
 
     @FXML
-    private Label carinventoryprice;
+    private Label carpriceLb;
 
+    @FXML
+    private Button detailsBtn;
 
 }

@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="880.0" prefWidth="1605.0" styleClass="background-image" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.autoeliteproject.HomePageController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="880.0" prefWidth="1605.0" styleClass="background-image" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.autoeliteproject.homeController">
    <bottom>
       <VBox alignment="TOP_CENTER" prefHeight="765.0" prefWidth="1300.0" BorderPane.alignment="CENTER">
          <children>
@@ -89,7 +89,7 @@
                   <Insets bottom="20.0" />
                </padding>
             </HBox>
-            <Button fx:id="searchcarsBtn" mnemonicParsing="false" onAction="#searchcarsBtn" styleClass="button-explorenow" stylesheets="@style.css" text="Search">
+            <Button fx:id="searchcarsBtn" mnemonicParsing="false" onAction="#searchcarsBtn" prefHeight="47.0" prefWidth="239.0" styleClass="button-explorenow" stylesheets="@style.css" text="Search">
                <font>
                   <Font name="Century Gothic Bold" size="28.0" />
                </font>
@@ -108,6 +108,6 @@
       </VBox>
    </bottom>
    <top>
-      <fx:include source="navbar.fxml"/>
+      <fx:include source="navbar.fxml" />
    </top>
 </BorderPane>

@@ -13,7 +13,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class HomePageController {
+public class homeController {
 
     @FXML
     private ComboBox<?> bodyBox;
@@ -45,9 +45,9 @@ public class HomePageController {
     @FXML
     void searchcarsBtn(ActionEvent event) {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("CarInventory_page.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("viewCars.fxml"));
             Parent root1 = (Parent) fxmlLoader.load();
-            CarInventoryController carInventoryController = fxmlLoader.getController();
+            viewcarsController viewcarsController = fxmlLoader.getController();
 
             Scene scene = new Scene(root1);
             Stage primaryStage = (Stage) searchcarsBtn.getScene().getWindow();

@@ -10,7 +10,7 @@ public class main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("Homepage.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("homepage.fxml"));
 
         primaryStage.setTitle("AutoElite");
         primaryStage.setMaximized(true);
