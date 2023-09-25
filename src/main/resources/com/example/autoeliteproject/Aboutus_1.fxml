@@ -1,125 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.String?>
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Separator?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="880.0" prefWidth="1605.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
-   <top>
-      <HBox alignment="CENTER" prefHeight="115.0" prefWidth="1605.0" stylesheets="@style.css" BorderPane.alignment="CENTER">
-         <children>
-            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
-               <children>
-                  <ImageView fitHeight="70.0" fitWidth="111.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@images/Asset%204.png" />
-                     </image>
-                     <HBox.margin>
-                        <Insets right="200.0" />
-                     </HBox.margin>
-                  </ImageView>
-               </children>
-            </HBox>
-            <HBox alignment="CENTER" prefHeight="115.0" prefWidth="745.0">
-               <children>
-                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" styleClass="about-us-button" stylesheets="@style.css" text="Home" textFill="WHITE">
-                     <font>
-                        <Font name="Century Gothic Bold" size="15.0" />
-                     </font>
-                     <HBox.margin>
-                        <Insets right="50.0" />
-                     </HBox.margin>
-                  </Button>
-                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="45.0" prefWidth="110.0" styleClass="about-us-button" stylesheets="@style.css" text="About Us" textFill="WHITE">
-                     <font>
-                        <Font name="Century Gothic Bold" size="15.0" />
-                     </font>
-                     <HBox.margin>
-                        <Insets right="50.0" />
-                     </HBox.margin>
-                  </Button>
-                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" styleClass="about-us-button" stylesheets="@style.css" text="Cars" textFill="WHITE">
-                     <font>
-                        <Font name="Century Gothic Bold" size="15.0" />
-                     </font>
-                     <HBox.margin>
-                        <Insets right="50.0" />
-                     </HBox.margin>
-                  </Button>
-                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" styleClass="about-us-button" stylesheets="@style.css" text="F.A.Q." textFill="WHITE">
-                     <font>
-                        <Font name="Century Gothic Bold" size="15.0" />
-                     </font>
-                     <HBox.margin>
-                        <Insets right="50.0" />
-                     </HBox.margin>
-                  </Button>
-                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="116.0" styleClass="about-us-button" stylesheets="@style.css" text="Contacts" textFill="WHITE">
-                     <font>
-                        <Font name="Century Gothic Bold" size="15.0" />
-                     </font>
-                     <HBox.margin>
-                        <Insets />
-                     </HBox.margin>
-                  </Button>
-               </children>
-            </HBox>
-            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
-               <children>
-                  <Button alignment="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" styleClass="about-us-button" stylesheets="@style.css" text="Login" textFill="WHITE">
-                     <font>
-                        <Font name="Century Gothic Bold" size="15.0" />
-                     </font>
-                     <HBox.margin>
-                        <Insets />
-                     </HBox.margin>
-                  </Button>
-                  <Separator maxHeight="40.0" minHeight="40.0" orientation="VERTICAL" prefHeight="40.0" />
-                  <Button alignment="CENTER" mnemonicParsing="false" prefHeight="45.0" prefWidth="113.0" styleClass="about-us-button" stylesheets="@style.css" text="Register" textFill="WHITE">
-                     <font>
-                        <Font name="Century Gothic Bold" size="15.0" />
-                     </font>
-                     <HBox.margin>
-                        <Insets />
-                     </HBox.margin>
-                  </Button>
-               </children>
-               <HBox.margin>
-                  <Insets left="200.0" />
-               </HBox.margin>
-            </HBox>
-         </children>
-         <styleClass>
-            <String fx:value="background-image" />
-            <String fx:value="hbox-bottom-border" />
-         </styleClass>
-      </HBox>
-   </top>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="880.0" prefWidth="1605.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.autoeliteproject.NavbarController">
    <center>
       <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="background-image2" stylesheets="@style.css" BorderPane.alignment="CENTER">
          <children>
-            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" stylesheets="@style.css">
-               <children>
-                  <Button mnemonicParsing="false" styleClass="about-us-button" stylesheets="@style.css" text="Our Story" textFill="WHITE" />
-                  <Button mnemonicParsing="false" styleClass="about-us-button" stylesheets="@style.css" text="Meet the Team" />
-                  <Button mnemonicParsing="false" styleClass="about-us-button" stylesheets="@style.css" text="Join Our Mission" />
-                  <Button mnemonicParsing="false" styleClass="about-us-button" stylesheets="@style.css" text="Customer Testimonials" />
-               </children>
-            </HBox>
             <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/Asset%204.png" />
                </image>
                <VBox.margin>
-                  <Insets bottom="20.0" />
+                  <Insets bottom="20.0" top="50.0" />
                </VBox.margin>
             </ImageView>
             <Label styleClass="text-overlay" stylesheets="@style.css" text="Welcome to our journey!" textFill="WHITE">
@@ -193,4 +91,12 @@
          </children>
       </VBox>
    </center>
+   <top>
+      <VBox prefHeight="0.0" prefWidth="1605.0" BorderPane.alignment="CENTER">
+         <children>
+            <fx:include source="navbar.fxml" />
+            <fx:include source="navbar2.fxml" />
+         </children></VBox>
+   </top>
+
 </BorderPane>

@@ -303,3 +303,90 @@
     -fx-border-width: 1px;
     -fx-text-fill: #ffffff;
 }
+/* Define a style class for your ComboBoxes */
+.combo-box {
+    -fx-background-color: white; /* Background color (white) */
+    -fx-text-fill: black; /* Text color (black) */
+    -fx-border-radius: 10px; /* Rounded corners */
+    -fx-font-family: "Century Gothic";
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+
+/* Define a style for the selected item in the ComboBox dropdown */
+.combo-box .list-cell:selected {
+    -fx-background-color: #000000; /* Background color for selected item (white) */
+    -fx-text-fill: #ffffff; /* Text color for selected item (black) */
+}
+
+/* Define a style for the ComboBox arrow button */
+.combo-box .arrow-button {
+    -fx-background-color: white; /* Arrow button background color (white) */
+}
+
+/* Define a style for the ComboBox arrow icon */
+.combo-box .arrow {
+    -fx-fill: black; /* Arrow icon color (black) */
+}
+.container {
+    -fx-background-color: rgba(40, 40, 40, 0.6); /* Background color (red) */
+    -fx-effect: dropshadow(three-pass-box, #000000, 10, 0, 0, 0); /* Red drop shadow effect */
+}
+/* Customize the track of the slider */
+.slider .track {
+    -fx-background-color: linear-gradient(to right, #212121, #ff0000); /* Gradient track color */
+    -fx-background-insets: 0, 1; /* Background insets */
+    -fx-background-radius: 0.25em; /* Rounded corners */
+
+}
+
+/* Customize the thumb (slider handle) */
+.slider .thumb {
+    -fx-background-color: #ff0000; /* Thumb color (red) */
+    -fx-padding: 10px; /* Padding around the thumb */
+    -fx-background-radius: 0.25em; /* Rounded corners */
+    -fx-graphic: null; /* Remove the default graphic */
+}
+
+/* Customize the tick marks */
+.slider .thumb .thumb-text {
+    -fx-fill: white; /* Text color */
+    -fx-font-size: 12px; /* Font size of tick mark labels */
+}
+
+/* Customize the tick marks */
+.slider .minor-tick-mark {
+    -fx-background-color: #ff5555; /* Minor tick mark color (lighter red) */
+    -fx-background-radius: 0.1em; /* Rounded corners */
+}
+
+/* Customize the major tick marks */
+.slider .major-tick-mark {
+    -fx-background-color: #ff0000; /* Major tick mark color (red) */
+    -fx-background-radius: 0.2em; /* Rounded corners */
+
+}
+
+/* Customize the labels (tooltip) */
+.slider .axis-label {
+    -fx-background-color: #ff5555; /* Label background color (lighter red) */
+    -fx-background-radius: 0.1em; /* Rounded corners */
+    -fx-font-size: 14px; /* Font size of labels */
+    -fx-text-fill: white; /* Label text color */
+}
+.nav-bar{
+    -fx-background-color: rgb(21, 21, 21);
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: transparent transparent #890000 transparent;
+    -fx-transition: all 0.3s ease;
+}
+.nav-bar:hover{
+    -fx-background-color: rgb(21, 21, 21);
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: transparent transparent #ff0000 transparent;
+    -fx-transition: all 0.3s ease;
+}
+.nav-bar2{
+    /* make transparent bg */
+    -fx-background-color: rgb(21, 21, 21);
+}

@@ -1,4 +1,4 @@
 package com.example.autoeliteproject;
 
-public class LandingPageController {
+public class contactsController {
 }
