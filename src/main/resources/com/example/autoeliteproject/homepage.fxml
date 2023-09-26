@@ -12,9 +12,18 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="880.0" prefWidth="1605.0" styleClass="background-image" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.autoeliteproject.homeController">
-   <bottom>
-      <VBox alignment="TOP_CENTER" prefHeight="765.0" prefWidth="1300.0" BorderPane.alignment="CENTER">
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="1080.0" prefWidth="1920.0" styleClass="background-image" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.autoeliteproject.homeController">
+   <top>
+      <VBox>
+         <children>
+            <fx:include source="infotop.fxml" />
+            <fx:include source="navbar.fxml" />
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="0.0" prefWidth="0.0" BorderPane.alignment="CENTER">
          <children>
             <Label alignment="CENTER" text="Find Your Dream Car" textFill="WHITE">
                <font>
@@ -106,13 +115,5 @@
             </Button>
          </children>
       </VBox>
-   </bottom>
-   <top>
-      <VBox>
-         <children>
-            <fx:include source="infotop.fxml" />
-            <fx:include source="navbar.fxml" />
-         </children>
-      </VBox>
-   </top>
+   </center>
 </BorderPane>

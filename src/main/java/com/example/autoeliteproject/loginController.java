@@ -1,5 +1,6 @@
 package com.example.autoeliteproject;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -8,6 +9,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class loginController {
     private com.example.autoeliteproject.navbarController navbarController;
@@ -64,22 +67,24 @@ public class loginController {
 
     }
 
-    @FXML
-    private void handleBackToHomeButtonClick() {
+    public void loadScene(String sceneFXML) {
         try {
-            // Load the homepage.fxml file
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("homepage.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(sceneFXML));
             Parent root = fxmlLoader.load();
-
-            // Create a new scene with the loaded root
             Scene scene = new Scene(root);
+            Stage stage = (Stage) loginnowBtn.getScene().getWindow();
 
-            // Get the current stage (the login stage) and set the scene to the homepage
-            Stage stage = (Stage) backtohomeBtn.getScene().getWindow();
+            // Set the stage to fullscreen
+            stage.setMaximized(true);
+
             stage.setScene(scene);
-
-        } catch (Exception e) {
+            stage.show();
+        } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public void handleBackToHomeButtonClick(ActionEvent actionEvent) {
+        loadScene("Homepage.fxml");
     }
 }

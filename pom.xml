@@ -15,6 +15,16 @@
 
   <dependencies>
     <dependency>
+      <groupId>com.gluonhq</groupId>
+      <artifactId>charm</artifactId>
+      <version>6.4.0</version>
+    </dependency>
+  </dependencies>
+
+
+
+  <dependencies>
+    <dependency>
       <groupId>org.openjfx</groupId>
       <artifactId>javafx-controls</artifactId>
       <version>20.0.1</version>

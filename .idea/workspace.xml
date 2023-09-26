@@ -5,30 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af59d6c1-98e8-4965-b0b1-d63e7c19a7f3" name="Changes" comment="initial">
-      <change afterPath="$PROJECT_DIR$/database.mwb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/cardetails.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/cars/civic/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/cars/civic/2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/cars/civic/3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/cars/civic/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/cars/civic/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/cars/civic/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/cars/civic/BIMS2018_Honda_Civic_RED-2-BM-850x567.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/cars/civic/honda-civic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/icons8-car-seat-50 (1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/icons8-clock-50.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/icons8-gas-station-50 (1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/icons8-gear-stick-50 (1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/icons8-location-50.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/icons8-phone-50.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/icons8-snowflake-64.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/infotop.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/cardetailController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/checkoutController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/successContrller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/checkout.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/sucesss.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/success.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/carcardsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/carcardsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/carCards.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/carCards.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/FAQController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/homeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/homeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/loginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/loginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/navbarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/navbarController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/Aboutus_1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/Aboutus_1.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/Aboutus_2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/Aboutus_2.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/Aboutus_3.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/Aboutus_3.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/cardetails.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/cardetails.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/homepage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/homepage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/honda-civic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/navbar.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/navbar.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/viewCars.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/viewCars.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +91,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -115,7 +114,8 @@
       <workItem from="1695547589350" duration="1392000" />
       <workItem from="1695549280576" duration="5684000" />
       <workItem from="1695596621831" duration="16296000" />
-      <workItem from="1695699027887" duration="6846000" />
+      <workItem from="1695699027887" duration="10041000" />
+      <workItem from="1695718974309" duration="3411000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <option name="closed" value="true" />
@@ -141,7 +141,23 @@
       <option name="project" value="LOCAL" />
       <updated>1695615842827</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="initial">
+      <option name="closed" value="true" />
+      <created>1695709611996</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1695709611996</updated>
+    </task>
+    <task id="LOCAL-00005" summary="initial">
+      <option name="closed" value="true" />
+      <created>1695709617424</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1695709617424</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

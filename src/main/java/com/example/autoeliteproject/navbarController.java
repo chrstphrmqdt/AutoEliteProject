@@ -18,9 +18,6 @@ public class navbarController {
     private Button contactsBtn;
 
     @FXML
-    private Button faqBtn;
-
-    @FXML
     private Button homeBtn;
 
     @FXML
@@ -44,10 +41,6 @@ public class navbarController {
         loadScene("contacts.fxml");
     }
 
-    @FXML
-    private void handleFAQButtonClick() {
-        loadScene("FAQ.fxml");
-    }
 
     @FXML
     private void handleHomeButtonClick() {
@@ -76,10 +69,15 @@ public class navbarController {
             Parent root = fxmlLoader.load();
             Scene scene = new Scene(root);
             Stage stage = (Stage) homeBtn.getScene().getWindow();
+
+            // Set the stage to fullscreen
+            stage.setMaximized(true);
+
             stage.setScene(scene);
             stage.show();
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
+
 }

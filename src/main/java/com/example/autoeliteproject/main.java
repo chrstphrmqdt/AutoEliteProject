@@ -10,10 +10,13 @@ public class main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("homepage.fxml"));
-
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Homepage.fxml"));
+        Parent root = loader.load();
         primaryStage.setTitle("AutoElite");
+
+        // Set the initial stage to fullscreen
         primaryStage.setMaximized(true);
+
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }

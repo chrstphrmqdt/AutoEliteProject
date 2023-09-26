@@ -407,7 +407,7 @@
     -fx-padding: 10px; /* Padding around the image */
 }
 
-.buynow-btn{
+.red-btn{
     -fx-background-color: #ff4b22; /* Background color */
     -fx-text-fill: white; /* Text color */
     -fx-font-family: "Century Gothic";
@@ -420,13 +420,13 @@
     -fx-background-insets: 0; /* Remove default button padding */
     -fx-background-radius: 12px; /* Match the border radius */
 }
-.buynow-btn:hover {
+.red-btn:hover {
     -fx-background-color: #ff6543; /* Lighter background color on hover */
     -fx-scale-x: 1.05; /* Add a subtle scaling effect on hover */
     -fx-scale-y: 1.05;
 }
 
-.book-btn{
+.green-btn{
     -fx-background-color: #05cd51; /* Background color */
     -fx-text-fill: white; /* Text color */
     -fx-font-family: "Century Gothic";
@@ -439,8 +439,20 @@
     -fx-background-insets: 0; /* Remove default button padding */
     -fx-background-radius: 12px; /* Match the border radius */
 }
-.book-btn:hover {
+.green-btn:hover {
     -fx-background-color: #1cd563; /* Lighter background color on hover */
     -fx-scale-x: 1.05; /* Add a subtle scaling effect on hover */
     -fx-scale-y: 1.05;
 }
+
+/* check-out text fields css */
+.text-field-checkout{
+    -fx-background-color: transparent;
+    -fx-background-radius: 25;
+    -fx-font-size: 16px;
+    -fx-border-radius: 25;
+    -fx-border-color: #9d9d9d;
+    -fx-border-width: 1px;
+    -fx-text-fill: #5b5b5b;
+}
+
