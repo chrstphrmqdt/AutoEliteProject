@@ -127,7 +127,7 @@
 /* Car Title */
 .car-title {
     -fx-font-weight: bold;
-    -fx-text-fill: #333; /* Text color */
+    -fx-text-fill: #ce0b0b; /* Text color */
     -fx-font-size: 25px;
 }
 
@@ -135,9 +135,13 @@
 .car-price {
     -fx-font-size: 20px;
     -fx-font-weight: bold;
-    -fx-text-fill: #FF5722; /* Price color */
+    -fx-text-fill: #101010; /* Price color */
 }
-
+.car-price2 {
+    -fx-font-size: 35px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ff4400; /* Price color */
+}
 /* Car Image */
 .car-image {
     -fx-max-width: 100%; /* Ensure the image doesn't exceed the card width */
@@ -389,4 +393,54 @@
 }
 .carinventory-bg{
     -fx-background-color: rgb(236, 236, 236);
+}
+.information-row-top{
+    -fx-background-color: rgb(21, 21, 21);
+    -fx-border-width: 0 0 1 0;
+    -fx-transition: all 0.3s ease;
+}
+
+.car-imagedisplay{
+    -fx-border-radius: 10px; /* Rounded corners */
+    -fx-border-color: #ccc; /* Border color */
+    -fx-border-width: 2px; /* Border width */
+    -fx-padding: 10px; /* Padding around the image */
+}
+
+.buynow-btn{
+    -fx-background-color: #ff4b22; /* Background color */
+    -fx-text-fill: white; /* Text color */
+    -fx-font-family: "Century Gothic";
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 12px; /* Rounded corners for a smoother look */
+    -fx-cursor: hand; /* Cursor style on hover */
+    -fx-effect: dropshadow(three-pass-box, #333333, 10, 0, 0, 0); /* Add a subtle drop shadow */
+    -fx-background-insets: 0; /* Remove default button padding */
+    -fx-background-radius: 12px; /* Match the border radius */
+}
+.buynow-btn:hover {
+    -fx-background-color: #ff6543; /* Lighter background color on hover */
+    -fx-scale-x: 1.05; /* Add a subtle scaling effect on hover */
+    -fx-scale-y: 1.05;
+}
+
+.book-btn{
+    -fx-background-color: #05cd51; /* Background color */
+    -fx-text-fill: white; /* Text color */
+    -fx-font-family: "Century Gothic";
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 12px; /* Rounded corners for a smoother look */
+    -fx-cursor: hand; /* Cursor style on hover */
+    -fx-effect: dropshadow(three-pass-box, #333333, 10, 0, 0, 0); /* Add a subtle drop shadow */
+    -fx-background-insets: 0; /* Remove default button padding */
+    -fx-background-radius: 12px; /* Match the border radius */
+}
+.book-btn:hover {
+    -fx-background-color: #1cd563; /* Lighter background color on hover */
+    -fx-scale-x: 1.05; /* Add a subtle scaling effect on hover */
+    -fx-scale-y: 1.05;
 }

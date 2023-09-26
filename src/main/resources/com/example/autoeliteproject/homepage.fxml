@@ -108,6 +108,11 @@
       </VBox>
    </bottom>
    <top>
-      <fx:include source="navbar.fxml" />
+      <VBox>
+         <children>
+            <fx:include source="infotop.fxml" />
+            <fx:include source="navbar.fxml" />
+         </children>
+      </VBox>
    </top>
 </BorderPane>

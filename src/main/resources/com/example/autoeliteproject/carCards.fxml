@@ -5,20 +5,13 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
 <VBox fx:id="carcardVb" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="375.0" prefWidth="291.0" spacing="1.0" styleClass="car-card" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.autoeliteproject.carcardsController">
    <children>
-      <ImageView fx:id="carImg" fitHeight="268.0" fitWidth="270.0" pickOnBounds="true" preserveRatio="true" styleClass="car-image">
-         <image>
-            <Image url="@images/honda-civic.png" />
-         </image>
-         <VBox.margin>
-            <Insets bottom="50.0" />
-         </VBox.margin>
-      </ImageView>
-      <Label fx:id="carnameLb" prefHeight="47.0" prefWidth="239.0" styleClass="car-title" stylesheets="@style.css" text="Honda Civic">
+      <Label fx:id="carnameLb" prefHeight="47.0" prefWidth="239.0" styleClass="car-title" stylesheets="@style.css" text="Honda Civic" textFill="#ff2121">
          <font>
             <Font name="Century Gothic" size="24.0" />
          </font>
@@ -26,6 +19,14 @@
             <Insets left="10.0" />
          </VBox.margin>
       </Label>
+      <ImageView fx:id="carImg" fitHeight="268.0" fitWidth="270.0" pickOnBounds="true" preserveRatio="true" styleClass="car-image">
+         <image>
+            <Image url="@images/cars/civic/honda-civic.png" />
+         </image>
+         <VBox.margin>
+            <Insets bottom="20.0" />
+         </VBox.margin>
+      </ImageView>
       <Label fx:id="carpriceLb" prefHeight="54.0" prefWidth="292.0" styleClass="car-price" stylesheets="@style.css" text="₱1,583,000">
          <font>
             <Font name="Century Gothic Bold" size="24.0" />
@@ -34,7 +35,74 @@
             <Insets left="10.0" />
          </VBox.margin>
       </Label>
-      <Button fx:id="detailsBtn" alignment="BASELINE_RIGHT" mnemonicParsing="false" prefHeight="45.0" prefWidth="370.0" styleClass="button-more-details" stylesheets="@style.css" text="More Details &gt;">
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <ImageView fitHeight="29.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/icons8-car-seat-50%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="29.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/icons8-snowflake-64.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="29.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/icons8-gear-stick-50%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="29.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/icons8-gas-station-50%20(1).png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </VBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+         <children>
+            <Label text="4 Seat" textFill="#686868">
+               <font>
+                  <Font name="Century Gothic" size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <Label text="AC" textFill="#686868">
+               <font>
+                  <Font name="Century Gothic" size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <Label text="Auto" textFill="#686868">
+               <font>
+                  <Font name="Century Gothic" size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <Label text="Petrol" textFill="#686868">
+               <font>
+                  <Font name="Century Gothic" size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <Button fx:id="detailsBtn" alignment="BASELINE_RIGHT" mnemonicParsing="false" onAction="#handleDetailsButtonClick" prefHeight="45.0" prefWidth="370.0" styleClass="button-more-details" stylesheets="@style.css" text="More Details 🡪">
          <font>
             <Font size="20.0" />
          </font>
