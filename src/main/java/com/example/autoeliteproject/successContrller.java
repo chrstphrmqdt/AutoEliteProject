@@ -14,19 +14,8 @@ public class successContrller {
     private Button continueshopBtn;
     @FXML
     private void handleContinueshopBtn () {
-        loadScene("viewCars.fxml");
+        SceneLoader.loadScene("viewCars.fxml", (Stage) continueshopBtn.getScene().getWindow());
     }
-    public void loadScene(String sceneFXML) {
-        try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(sceneFXML));
-            Parent root = fxmlLoader.load();
-            Scene scene = new Scene(root);
-            Stage stage = (Stage) continueshopBtn.getScene().getWindow();
-            stage.setScene(scene);
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+
 
 }

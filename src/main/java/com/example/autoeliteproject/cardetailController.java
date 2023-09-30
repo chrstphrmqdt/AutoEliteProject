@@ -13,9 +13,6 @@ public class cardetailController {
 
 
     @FXML
-    private Button bookBtn;
-
-    @FXML
     private Button buynowBtn;
 
     @FXML
@@ -24,23 +21,12 @@ public class cardetailController {
     //event handlers
     @FXML
     private void handlebuynowButtonClick() {
-        loadScene("checkout.fxml");
+        SceneLoader.loadScene("checkout.fxml", (Stage) buynowBtn.getScene().getWindow());
     }
 
-    public void loadScene(String sceneFXML) {
-        try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(sceneFXML));
-            Parent root = fxmlLoader.load();
-            Scene scene = new Scene(root);
-            Stage stage = (Stage) buynowBtn.getScene().getWindow();
-
-            // Set the stage to fullscreen
-            stage.setMaximized(true);
-
-            stage.setScene(scene);
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    @FXML
+    private void handlecontactcsButtonClick() {
+        SceneLoader.loadScene("contactuss.fxml", (Stage) contactcsBtn.getScene().getWindow());
     }
+
 }

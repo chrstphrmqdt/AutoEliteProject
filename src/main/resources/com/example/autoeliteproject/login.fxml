@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane id="loginFrame" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="background-image2" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.autoeliteproject.loginController">
+<BorderPane id="loginFrame" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1600.0" styleClass="background-image2" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.autoeliteproject.loginController">
    <center>
       <VBox alignment="CENTER" prefHeight="381.0" prefWidth="965.0" stylesheets="@style.css">
          <children>
@@ -82,7 +82,7 @@
                   </Button>
                </children>
             </HBox>
-            <Button fx:id="donthaveaccBtn" mnemonicParsing="false" onAction="#donthaveaccBtnClicked" styleClass="donthaveacc-button" stylesheets="@style.css" text="Don't have an account yet?" />
+            <Button fx:id="donthaveaccBtn" mnemonicParsing="false" onAction="#handlesignupButtonClick" styleClass="donthaveacc-button" stylesheets="@style.css" text="Don't have an account yet?" />
             <Button fx:id="backtohomeBtn" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#handleBackToHomeButtonClick" styleClass="donthaveacc-button" stylesheets="@style.css" text="Back to Home">
                <VBox.margin>
                   <Insets top="50.0" />

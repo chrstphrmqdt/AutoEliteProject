@@ -32,19 +32,8 @@ public class carcardsController {
     //event handlers
     @FXML
     private void handleDetailsButtonClick() {
-        loadScene("cardetails.fxml");
+        SceneLoader.loadScene("cardetails.fxml", (Stage) detailsBtn.getScene().getWindow());
     }
 
-    public void loadScene(String sceneFXML) {
-        try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(sceneFXML));
-            Parent root = fxmlLoader.load();
-            Scene scene = new Scene(root);
-            Stage stage = (Stage) detailsBtn.getScene().getWindow();
-            stage.setScene(scene);
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+
 }

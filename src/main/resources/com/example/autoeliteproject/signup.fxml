@@ -13,16 +13,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="621.0" prefWidth="1033.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1600.0" styleClass="background-image5" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.autoeliteproject.signupController">
    <center>
-      <HBox prefHeight="621.0" prefWidth="1021.0" styleClass="login-form-bgcolor" stylesheets="@style.css" BorderPane.alignment="CENTER">
+      <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="621.0" prefWidth="1021.0" styleClass="login-form-bgcolor" stylesheets="@style.css" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="694.0" fitWidth="516.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@images/bglogin.jpg" />
-               </image>
-            </ImageView>
-            <VBox alignment="CENTER" prefHeight="695.0" prefWidth="553.0" stylesheets="@style.css">
+            <VBox alignment="CENTER" prefHeight="800.0" prefWidth="1082.0" stylesheets="@style.css">
                <children>
                   <ImageView fitHeight="72.0" fitWidth="153.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -42,7 +37,7 @@
                   </Label>
                   <HBox alignment="CENTER" prefHeight="62.0" prefWidth="517.0">
                      <children>
-                        <TextField prefHeight="25.0" prefWidth="295.0" promptText="Username" styleClass="text-field-login" stylesheets="@style.css">
+                        <TextField fx:id="usernameTf" prefHeight="25.0" prefWidth="295.0" promptText="Username" styleClass="text-field-login" stylesheets="@style.css">
                            <HBox.margin>
                               <Insets left="10.0" />
                            </HBox.margin>
@@ -51,7 +46,7 @@
                   </HBox>
                   <HBox alignment="CENTER" prefHeight="62.0" prefWidth="517.0">
                      <children>
-                        <TextField prefHeight="25.0" prefWidth="295.0" promptText="Email Address" styleClass="text-field-login" stylesheets="@style.css">
+                        <TextField fx:id="emailTf" prefHeight="25.0" prefWidth="295.0" promptText="Email Address" styleClass="text-field-login" stylesheets="@style.css">
                            <HBox.margin>
                               <Insets left="10.0" />
                            </HBox.margin>
@@ -60,7 +55,7 @@
                   </HBox>
                   <HBox alignment="CENTER" prefHeight="62.0" prefWidth="517.0">
                      <children>
-                        <PasswordField prefHeight="25.0" prefWidth="295.0" promptText="Password" styleClass="text-field-login" stylesheets="@style.css">
+                        <PasswordField fx:id="passTf" prefHeight="25.0" prefWidth="295.0" promptText="Password" styleClass="text-field-login" stylesheets="@style.css">
                            <HBox.margin>
                               <Insets left="10.0" />
                            </HBox.margin>
@@ -75,11 +70,11 @@
                         <Insets top="20.0" />
                      </VBox.margin>
                   </CheckBox>
-                  <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="205.0" styleClass="login-button" stylesheets="@style.css" text="Create your account">
+                  <Button fx:id="createBtn" mnemonicParsing="false" prefHeight="50.0" prefWidth="205.0" styleClass="login-button" stylesheets="@style.css" text="Create your account">
                      <VBox.margin>
                         <Insets top="20.0" />
                      </VBox.margin></Button>
-                  <Button mnemonicParsing="false" styleClass="donthaveacc-button" stylesheets="@style.css" text="Already have an account ? Log in">
+                  <Button fx:id="loginBtn" mnemonicParsing="false" onAction="#handleLoginButtonClick" styleClass="donthaveacc-button" stylesheets="@style.css" text="Already have an account ? Log in">
                      <VBox.margin>
                         <Insets top="20.0" />
                      </VBox.margin></Button>

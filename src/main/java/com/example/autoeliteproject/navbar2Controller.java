@@ -23,38 +23,20 @@ public class navbar2Controller {
 
     @FXML
     void handleJoinUsButtonClick(ActionEvent event) {
-        loadScene("Aboutus_3.fxml", true);
+        SceneLoader.loadScene("Aboutus_3.fxml", (Stage) joinusBtn.getScene().getWindow());
 
     }
 
     @FXML
     void handleMeetTeamButtonClick(ActionEvent event) {
-        loadScene("Aboutus_2.fxml", true);
+        SceneLoader.loadScene("Aboutus_2.fxml", (Stage) meetteamBtn.getScene().getWindow());
 
     }
 
     @FXML
     void handleOurJourneyButtonClick(ActionEvent event) {
-        loadScene("Aboutus_1.fxml", true);
+        SceneLoader.loadScene("Aboutus_1.fxml", (Stage) ourjourneyBtn.getScene().getWindow());
 
-    }
-
-    public void loadScene(String sceneFXML, boolean isFullScreen) {
-        try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(sceneFXML));
-            Parent root = fxmlLoader.load();
-            Scene scene = new Scene(root);
-            Stage stage = (Stage) ourjourneyBtn.getScene().getWindow();
-
-            // Set full-screen mode based on the provided boolean value
-            stage.setFullScreen(isFullScreen);
-
-            // Set the scene to the stage
-            stage.setScene(scene);
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
     }
 
 }

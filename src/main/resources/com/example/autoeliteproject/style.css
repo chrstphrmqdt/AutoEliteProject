@@ -27,6 +27,10 @@
     -fx-background-size: cover;
     -fx-background-position: center;
 }
+
+.black-bg{
+    -fx-background-color: rgba(7, 7, 7, 0.82);
+}
 .transparent-background{
     -fx-background-color: transparent;
 }
@@ -456,3 +460,76 @@
     -fx-text-fill: #5b5b5b;
 }
 
+/* styles.css */
+.custom-image-view {
+    -fx-effect: dropshadow(gaussian, rgb(167, 0, 0), 10, 0, 0, 5); /* Drop shadow effect */
+}
+/* Apply styles to the text fields within the "GET IN TOUCH" section */
+.contact-textfield {
+    -fx-background-color: #f2f2f2; /* Background color */
+    -fx-border-color: #ccc; /* Border color */
+    -fx-border-width: 1px; /* Border width */
+    -fx-border-radius: 5px; /* Border radius */
+    -fx-pref-width: 300px; /* Preferred width */
+    -fx-pref-height: 40px; /* Preferred height */
+    -fx-font-size: 14px; /* Font size */
+    -fx-padding: 5px; /* Padding */
+}
+
+/* Apply styles to the text within the text fields */
+.contact-textfield .text {
+    -fx-fill: #333; /* Text color */
+}
+
+/* Apply hover effect to the text fields */
+.contact-textfield:hover {
+    -fx-border-color: #0073e6; /* Border color on hover */
+}
+/* Apply styles to the TextArea within the "GET IN TOUCH" section */
+.contact-textarea {
+    -fx-background-color: #f2f2f2; /* Background color */
+    -fx-border-color: #ccc; /* Border color */
+    -fx-border-width: 1px; /* Border width */
+    -fx-border-radius: 5px; /* Border radius */
+    -fx-pref-width: 300px; /* Preferred width */
+    -fx-pref-height: 120px; /* Preferred height */
+    -fx-font-size: 14px; /* Font size */
+    -fx-padding: 5px; /* Padding */
+}
+
+/* Apply styles to the button */
+.contact-button {
+    -fx-background-color: #e64500; /* Background color */
+    -fx-text-fill: white; /* Text color */
+    -fx-font-size: 16px; /* Font size */
+    -fx-font-weight: bold;
+    -fx-pref-width: 150px; /* Preferred width */
+    -fx-pref-height: 40px; /* Preferred height */
+    -fx-border-radius: 5px; /* Border radius */
+}
+
+/* Apply hover effect to the button */
+.contact-button:hover {
+    -fx-background-color: #b30000; /* Background color on hover */
+}
+/* Apply styles to the StackPane */
+.container-stackpane {
+    -fx-background-color: rgb(25, 25, 25); /* Red background color */
+    -fx-background-radius: 10px; /* Rounded border radius */
+    -fx-border-color: #b00000; /* Border color */
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-radius: 10px; /* Rounded border radius */
+    -fx-padding: 20px; /* Padding inside the container */
+}
+
+/* Apply hover effect */
+.container-stackpane:hover {
+    -fx-background-color: rgb(25, 25, 25); /* Red background color */
+    -fx-border-color: #ff0000; /* Border color on hover */
+    -fx-effect: dropshadow(gaussian, #ff0000, 50, 0, 0, 0); /* Glow effect on hover */
+    -fx-scale-x: 1.02; /* Add a subtle scaling effect on hover for a 3D effect */
+    -fx-scale-y: 1.02;
+}
+.white-bg{
+    -fx-background-color: #dedddd;
+}

@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="carinventory-bg" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.autoeliteproject.viewcarsController">
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1600.0" styleClass="carinventory-bg" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.autoeliteproject.viewcarsController">
    <center>
       <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" stylesheets="@style.css" BorderPane.alignment="CENTER">
          <children>
@@ -90,7 +90,7 @@
       <fx:include source="navbar.fxml" />
    </top>
    <bottom>
-      <HBox alignment="TOP_CENTER" prefHeight="134.0" prefWidth="1605.0" BorderPane.alignment="CENTER">
+      <HBox alignment="TOP_CENTER" prefHeight="0.0" prefWidth="1600.0" BorderPane.alignment="CENTER">
          <children>
             <Button fx:id="prevBtn" mnemonicParsing="false" styleClass="button-more-details" stylesheets="@style.css">
                <graphic>
@@ -111,6 +111,9 @@
                </graphic>
             </Button>
          </children>
+         <padding>
+            <Insets bottom="20.0" />
+         </padding>
       </HBox>
    </bottom>
 </BorderPane>

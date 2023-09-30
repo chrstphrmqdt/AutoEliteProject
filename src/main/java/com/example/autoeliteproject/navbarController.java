@@ -33,51 +33,32 @@ public class navbarController {
     //event handlers
     @FXML
     private void handleAboutUsButtonClick() {
-        loadScene("Aboutus_1.fxml");
+        SceneLoader.loadScene("Aboutus_1.fxml", (Stage) aboutusBtn.getScene().getWindow());
     }
 
     @FXML
     private void handleContactsButtonClick() {
-        loadScene("contacts.fxml");
+        SceneLoader.loadScene("contactuss.fxml", (Stage) contactsBtn.getScene().getWindow());
     }
-
 
     @FXML
     private void handleHomeButtonClick() {
-        loadScene("homepage.fxml");
+        SceneLoader.loadScene("homepage.fxml", (Stage) homeBtn.getScene().getWindow());
     }
 
     @FXML
     private void handleLoginButtonClick() {
-        loadScene("login.fxml");
+        SceneLoader.loadScene("login.fxml", (Stage) loginBtn.getScene().getWindow());
     }
 
     @FXML
     private void handleSignupButtonClick() {
-        loadScene("signup.fxml");
+        SceneLoader.loadScene("signup.fxml", (Stage) signupBtn.getScene().getWindow());
     }
 
     @FXML
     private void handleViewCarsButtonClick() {
-        loadScene("viewCars.fxml");
-    }
-
-    // Helper method to load and display an FXML scene
-    public void loadScene(String sceneFXML) {
-        try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(sceneFXML));
-            Parent root = fxmlLoader.load();
-            Scene scene = new Scene(root);
-            Stage stage = (Stage) homeBtn.getScene().getWindow();
-
-            // Set the stage to fullscreen
-            stage.setMaximized(true);
-
-            stage.setScene(scene);
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        SceneLoader.loadScene("viewCars.fxml", (Stage) viewCarsBtn.getScene().getWindow());
     }
 
 }
