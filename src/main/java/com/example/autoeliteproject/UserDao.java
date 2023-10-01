@@ -1,6 +1,8 @@
 package com.example.autoeliteproject;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class UserDao {
     private static final String DB_URL = "jdbc:mysql://localhost:3306/autoelite";
@@ -30,6 +32,7 @@ public class UserDao {
             return false; // Handle the exception appropriately, e.g., log it or show an error message
         }
     }
+
     public User getUserByUsername(String username) {
         try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {
             String sql = "SELECT * FROM users WHERE username = ?";
@@ -56,7 +59,149 @@ public class UserDao {
             e.printStackTrace();
         }
 
-        return null; // Return null if no user was found or an error occurred
+        return null;
     }
 
+    public List<String> getAllCarMakes() {
+        List<String> carMakes = new ArrayList<>();
+
+        try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {
+            String sql = "SELECT DISTINCT make_name FROM cardetails";
+
+            try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
+                try (ResultSet resultSet = preparedStatement.executeQuery()) {
+                    while (resultSet.next()) {
+                        String make = resultSet.getString("make_name");
+                        carMakes.add(make);
+                    }
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return carMakes;
+    }
+
+    public List<String> getCarModelsByMake(String make) {
+        List<String> carModels = new ArrayList<>();
+
+        try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {
+            String sql = "SELECT DISTINCT model_name FROM cardetails WHERE make_name = ?";
+
+            try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
+                preparedStatement.setString(1, make);
+
+                try (ResultSet resultSet = preparedStatement.executeQuery()) {
+                    while (resultSet.next()) {
+                        String model = resultSet.getString("model_name");
+                        carModels.add(model);
+                    }
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return carModels;
+    }
+
+    public List<String> getYearsByMake(String make) {
+        List<String> carYears = new ArrayList<>();
+
+        try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {
+            String sql = "SELECT DISTINCT year FROM cardetails WHERE make_name = ?";
+
+            try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
+                preparedStatement.setString(1, make);
+
+                try (ResultSet resultSet = preparedStatement.executeQuery()) {
+                    while (resultSet.next()) {
+                        String year = resultSet.getString("year");
+                        carYears.add(year);
+                    }
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return carYears;
+    }
+
+    public List<String> getConditionsByMake(String make) {
+        List<String> carConditions = new ArrayList<>();
+
+        try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {
+            String sql = "SELECT DISTINCT condition_name FROM cardetails WHERE make_name = ?";
+
+            try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
+                preparedStatement.setString(1, make);
+
+                try (ResultSet resultSet = preparedStatement.executeQuery()) {
+                    while (resultSet.next()) {
+                        String condition = resultSet.getString("condition_name");
+                        carConditions.add(condition);
+                    }
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return carConditions;
+    }
+
+    public List<String> getBodyTypesByMake(String make) {
+        List<String> carBodyTypes = new ArrayList<>();
+
+        try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {
+            String sql = "SELECT DISTINCT body_type_name FROM cardetails WHERE make_name = ?";
+
+            try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
+                preparedStatement.setString(1, make);
+
+                try (ResultSet resultSet = preparedStatement.executeQuery()) {
+                    while (resultSet.next()) {
+                        String bodyType = resultSet.getString("body_type_name");
+                        carBodyTypes.add(bodyType);
+                    }
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return carBodyTypes;
+    }
+
+    public List<String> getTransmissionsByMake(String make) {
+        List<String> carTransmissions = new ArrayList<>();
+
+        try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {
+            String sql = "SELECT DISTINCT transmission_name FROM cardetails WHERE make_name = ?";
+
+            try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
+                preparedStatement.setString(1, make);
+
+                try (ResultSet resultSet = preparedStatement.executeQuery()) {
+                    while (resultSet.next()) {
+                        String transmission = resultSet.getString("transmission_name");
+                        carTransmissions.add(transmission);
+                    }
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return carTransmissions;
+    }
+
+
+
+
+
+
 }
+

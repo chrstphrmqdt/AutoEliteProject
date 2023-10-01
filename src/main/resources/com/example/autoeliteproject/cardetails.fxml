@@ -116,7 +116,7 @@
                                           <Font name="System Bold" size="15.0" />
                                        </font>
                                     </Label>
-                                    <Label text="Drive Type">
+                                    <Label text="Body Type">
                                        <font>
                                           <Font name="System Bold" size="15.0" />
                                        </font>
@@ -132,11 +132,6 @@
                                        </font>
                                     </Label>
                                     <Label text="Year">
-                                       <font>
-                                          <Font name="System Bold" size="15.0" />
-                                       </font>
-                                    </Label>
-                                    <Label text="Fuel Type">
                                        <font>
                                           <Font name="System Bold" size="15.0" />
                                        </font>
@@ -163,7 +158,7 @@
                                           <Font size="15.0" />
                                        </font>
                                     </Label>
-                                    <Label text="Front-wheel drive (FWD)">
+                                    <Label text="Sedan">
                                        <font>
                                           <Font size="15.0" />
                                        </font>
@@ -179,11 +174,6 @@
                                        </font>
                                     </Label>
                                     <Label text="2023">
-                                       <font>
-                                          <Font size="15.0" />
-                                       </font>
-                                    </Label>
-                                    <Label text="Gasoline">
                                        <font>
                                           <Font size="15.0" />
                                        </font>

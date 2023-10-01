@@ -40,7 +40,7 @@
                         <Insets bottom="10.0" />
                      </HBox.margin>
                   </ImageView>
-                  <TextField id="usernameTf" fx:id="usernameTf" onAction="#usernameTfClicked" prefHeight="25.0" prefWidth="295.0" promptText="Username" styleClass="text-field-login" stylesheets="@style.css">
+                  <TextField id="usernameTf" fx:id="usernameTf" prefHeight="25.0" prefWidth="295.0" promptText="Username" styleClass="text-field-login" stylesheets="@style.css">
                      <HBox.margin>
                         <Insets left="10.0" />
                      </HBox.margin>
@@ -57,7 +57,7 @@
                         <Image url="@images/pass.png" />
                      </image>
                   </ImageView>
-                  <PasswordField fx:id="passTf" onAction="#passTfClicked" prefHeight="25.0" prefWidth="293.0" promptText="Password" styleClass="text-field-login" stylesheets="@style.css">
+                  <PasswordField fx:id="passTf" prefHeight="25.0" prefWidth="293.0" promptText="Password" styleClass="text-field-login" stylesheets="@style.css">
                      <HBox.margin>
                         <Insets left="10.0" />
                      </HBox.margin>
@@ -70,7 +70,7 @@
             <Button fx:id="loginnowBtn" mnemonicParsing="false" onAction="#loginnowBtnClicked" prefHeight="50.0" prefWidth="205.0" styleClass="login-button" stylesheets="@style.css" text="Log In" />
             <HBox alignment="CENTER">
                <children>
-                  <CheckBox fx:id="rememberCbox" mnemonicParsing="false" onAction="#rememberCboxClicked" styleClass="rememberme-checkbox" stylesheets="@style.css" text="Remember me" textFill="WHITE">
+                  <CheckBox fx:id="rememberCbox" mnemonicParsing="false" styleClass="rememberme-checkbox" stylesheets="@style.css" text="Remember me" textFill="WHITE">
                      <font>
                         <Font name="Century Gothic" size="13.0" />
                      </font>

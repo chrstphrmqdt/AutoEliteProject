@@ -28,9 +28,10 @@
     -fx-background-position: center;
 }
 
-.black-bg{
-    -fx-background-color: rgba(7, 7, 7, 0.82);
+.blackgradientbg{
+    -fx-background-color: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(107, 107, 107, 0.7), rgba(30, 30, 30, 0.7));
 }
+
 .transparent-background{
     -fx-background-color: transparent;
 }
@@ -161,6 +162,7 @@
 .about-us-button {
     -fx-background-color: transparent; /* Transparent background */
     -fx-text-fill: #ffffff; /* White text color */
+    -fx-font-family: "Arial";
     -fx-font-size: 16px;
     -fx-font-weight: bold;
     -fx-padding: 10px 20px; /* Padding for button size */
@@ -199,6 +201,7 @@
 .join-button {
     -fx-background-color: #FF0000; /* Red background color */
     -fx-text-fill: white; /* Text color */
+    -fx-font-family: "Arial";
     -fx-font-size: 18px; /* Font size */
     -fx-font-weight: bold; /* Font weight */
     -fx-border-color: transparent; /* Remove button border */
@@ -219,6 +222,7 @@
 .toggle-button-FAQ {
     -fx-background-color: #EDEDED; /* Background color when unselected */
     -fx-background-radius: 15; /* Rounded corners */
+    -fx-font-family: Arial;
     -fx-padding: 10px 20px; /* Adjust padding for button size */
     -fx-text-fill: #333333; /* Text color */
     -fx-font-size: 16px; /* Font size */
@@ -245,7 +249,7 @@
 }
 .text-field-login{
     -fx-background-color: transparent;
-    -fx-font-family: "Century Gothic";
+    -fx-font-family: "Arial";
     -fx-background-radius: 25;
     -fx-font-size: 16px;
     -fx-border-radius: 25;
@@ -257,7 +261,7 @@
 .login-button{
     -fx-background-color: #ff2222; /* Background color */
     -fx-text-fill: white; /* Text color */
-    -fx-font-family: "Century Gothic";
+    -fx-font-family: "Arial";
     -fx-font-size: 16px;
     -fx-font-weight: bold;
     -fx-padding: 10px 20px;
@@ -276,7 +280,7 @@
 .forgotpass-button{
     -fx-background-color: transparent; /* Transparent background */
     -fx-text-fill: #ffffff; /* White text color */
-    -fx-font-family: "Century Gothic";
+    -fx-font-family: "Arial";
     -fx-font-size: 13px;
     -fx-font-weight: italic;
     -fx-padding: 10px 20px; /* Padding for button size */
@@ -290,7 +294,7 @@
 .donthaveacc-button{
     -fx-background-color: transparent; /* Transparent background */
     -fx-text-fill: #ffffff; /* White text color */
-    -fx-font-family: "Century Gothic";
+    -fx-font-family: "Arial";
     -fx-font-size: 13px;
     -fx-font-weight: italic;
     -fx-padding: 10px 20px; /* Padding for button size */
@@ -302,7 +306,7 @@
 }
 .datepicker-signup{
     -fx-background-color: transparent;
-    -fx-font-family: "Century Gothic";
+    -fx-font-family: "Arial";
     -fx-font-size: 16px;
     -fx-border-color: #9d9d9d;
     -fx-border-width: 1px;
@@ -313,7 +317,7 @@
     -fx-background-color: white; /* Background color (white) */
     -fx-text-fill: black; /* Text color (black) */
     -fx-border-radius: 10px; /* Rounded corners */
-    -fx-font-family: "Century Gothic";
+    -fx-font-family: "Arial";
     -fx-font-weight: bold;
     -fx-font-size: 16px;
 }
@@ -380,20 +384,23 @@
     -fx-text-fill: white; /* Label text color */
 }
 .nav-bar{
-    -fx-background-color: rgb(21, 21, 21);
+    -fx-background-color: rgb(28, 28, 28);
     -fx-border-width: 0 0 1 0;
     -fx-border-color: transparent transparent #890000 transparent;
     -fx-transition: all 0.3s ease;
 }
 .nav-bar:hover{
-    -fx-background-color: rgb(21, 21, 21);
     -fx-border-width: 0 0 1 0;
     -fx-border-color: transparent transparent #ff0000 transparent;
     -fx-transition: all 0.3s ease;
 }
-.nav-bar2{
+.navbar-bg{
     /* make transparent bg */
-    -fx-background-color: rgb(21, 21, 21);
+    -fx-background-color: rgb(28, 28, 28);
+}
+.navbar-bg2{
+    /* make transparent bg */
+    -fx-background-color: rgb(233, 233, 233);
 }
 .carinventory-bg{
     -fx-background-color: rgb(236, 236, 236);
@@ -414,7 +421,7 @@
 .red-btn{
     -fx-background-color: #ff4b22; /* Background color */
     -fx-text-fill: white; /* Text color */
-    -fx-font-family: "Century Gothic";
+    -fx-font-family: "Arial";
     -fx-font-size: 20px;
     -fx-font-weight: bold;
     -fx-padding: 10px 20px;
@@ -433,7 +440,7 @@
 .green-btn{
     -fx-background-color: #05cd51; /* Background color */
     -fx-text-fill: white; /* Text color */
-    -fx-font-family: "Century Gothic";
+    -fx-font-family: "Arial";
     -fx-font-size: 20px;
     -fx-font-weight: bold;
     -fx-padding: 10px 20px;
@@ -544,4 +551,90 @@
     -fx-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
     -fx-cursor: hand; /* Cursor style on hover */
     -fx-effect: dropshadow(three-pass-box, #333333, 3, 0, 0, 0); /* Drop shadow effect */
+}
+
+/*design for account information textfields*/
+
+.text-field-accountinfo{
+    -fx-background-color: transparent;
+    -fx-font-family: "Arial";
+    -fx-font-size: 16px;
+    -fx-border-color: #ff0000;
+    -fx-border-width: 1px;
+    -fx-text-fill: #171717;
+    /* make bottom border visible only */
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: rgb(55, 54, 54);
+
+}
+
+/* design for navbar buttons for account details */
+.navbar-button-accountdetails{
+    -fx-background-color: #1c1c1c; /* Transparent background */
+    -fx-text-fill: #e9e9e9; /* White text color */
+    -fx-font-family: "Arial";
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand; /* Cursor style on hover */
+}
+.navbar-button-accountdetails:hover {
+    -fx-text-fill: #ff3600; /* White text color */
+}
+
+
+/* design for delete account button */
+.delete-account-button{
+    -fx-background-color: #transparent; /* Background color */
+    -fx-text-fill: #ff0000; /* Text color */
+    -fx-font-family: "Arial";
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 20px; /* Rounded corners for a smoother look */
+    -fx-cursor: hand; /* Cursor style on hover */
+    -fx-background-insets: 0; /* Remove default button padding */
+    -fx-background-radius: 20px; /* Match the border radius */
+}
+.delete-account-button:hover {
+    -fx-scale-x: 1.05; /* Add a subtle scaling effect on hover */
+    -fx-scale-y: 1.05;
+}
+
+/*design for update account button */
+.update-account-button{
+    -fx-background-color: #52ff22; /* Background color */
+    -fx-text-fill: #1e1e1e; /* Text color */
+    -fx-font-family: "Arial";
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 20px; /* Rounded corners for a smoother look */
+    -fx-cursor: hand; /* Cursor style on hover */
+    -fx-effect: dropshadow(three-pass-box, #333333, 10, 0, 0, 0); /* Add a subtle drop shadow */
+    -fx-background-insets: 0; /* Remove default button padding */
+    -fx-background-radius: 20px; /* Match the border radius */
+}
+.update-account-button:hover {
+    -fx-background-color: #72ff43; /* Lighter background color on hover */
+    -fx-scale-x: 1.05; /* Add a subtle scaling effect on hover */
+    -fx-scale-y: 1.05;
+}
+
+/* design for save button */
+.save-button{
+    -fx-background-color: #d8d8d8; /* Background color */
+    -fx-text-fill: #868686; /* Text color */
+    -fx-font-family: "Arial";
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5px; /* Rounded corners for a smoother look */
+    -fx-cursor: hand; /* Cursor style on hover */
+    -fx-background-insets: 0; /* Remove default button padding */
+    -fx-background-radius: 5px; /* Match the border radius */
+}
+.save-button:hover {
+    -fx-text-fill: #ffffff; /* Text color */
+    -fx-background-color: #1145f8; /* Lighter background color on hover */
+    -fx-scale-x: 1.05; /* Add a subtle scaling effect on hover */
+    -fx-scale-y: 1.05;
 }

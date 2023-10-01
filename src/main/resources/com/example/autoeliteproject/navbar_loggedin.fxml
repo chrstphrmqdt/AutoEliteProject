@@ -7,7 +7,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.HBox?>
 
-<HBox alignment="CENTER" spacing="20.0" styleClass="nav-bar" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.autoeliteproject.navbarController">
+<HBox alignment="CENTER" spacing="20.0" styleClass="nav-bar" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.autoeliteproject.navbarLoggedinController">
    <children>
       <ImageView fitHeight="72.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true">
          <HBox.margin>
@@ -34,7 +34,7 @@
       </Button>
       <Button fx:id="contactsBtn" mnemonicParsing="false" onAction="#handleContactsButtonClick" styleClass="about-us-button" stylesheets="@style.css" text="Contacts" />
       <Separator prefHeight="8.0" prefWidth="85.0" visible="false" />
-      <Button fx:id="contactsBtn1" alignment="TOP_CENTER" mnemonicParsing="false" styleClass="about-us-button" stylesheets="@style.css" text="User">
+      <Button fx:id="userinfoBtn" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#handleuserinfoButtonClick" styleClass="about-us-button" stylesheets="@style.css" text="User">
          <graphic>
             <ImageView fitHeight="39.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
                <image>

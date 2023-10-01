@@ -17,28 +17,16 @@ public class loginController {
     private Button donthaveaccBtn;
 
     @FXML
-    private Button forgotpassBtn;
-
-    @FXML
     private Button loginnowBtn;
 
     @FXML
     private PasswordField passTf;
 
     @FXML
-    private CheckBox rememberCbox;
-
-    @FXML
     private TextField usernameTf;
 
     @FXML
     private Button backtohomeBtn;
-
-    @FXML
-    private Button signupBtn;
-
-    @FXML
-    private Button loginBtn;
 
     @FXML
     void donthaveaccBtnClicked() {
@@ -66,21 +54,6 @@ public class loginController {
         } else {
             showAlert(Alert.AlertType.ERROR, "Login Failed", "Authentication Error", "Invalid username or password.");
         }
-    }
-
-    @FXML
-    void passTfClicked() {
-        // Handle password field interaction if needed
-    }
-
-    @FXML
-    void rememberCboxClicked() {
-        // Handle "Remember Me" checkbox interaction if needed
-    }
-
-    @FXML
-    void usernameTfClicked() {
-        // Handle username field interaction if needed
     }
 
     private boolean authenticateUser(String username, String password) {
@@ -113,7 +86,4 @@ public class loginController {
         SceneLoader.loadScene("Homepage.fxml", (Stage) backtohomeBtn.getScene().getWindow());
     }
 
-    public void handlesignupButtonClick(ActionEvent actionEvent) {
-        SceneLoader.loadScene("signup.fxml", (Stage) donthaveaccBtn.getScene().getWindow());
-    }
 }
