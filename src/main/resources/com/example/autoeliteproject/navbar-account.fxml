@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox alignment="CENTER" prefHeight="43.0" prefWidth="422.0" spacing="60.0" styleClass="navbar-bg" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.autoeliteproject.navbaraccountController">
+   <children>
+      <Button fx:id="personinfoBtn" mnemonicParsing="false" onAction="#handlePersonInfoButtonClick" styleClass="navbar-button-accountdetails" stylesheets="@style.css" text="Personal Info" />
+      <Button fx:id="billingsBtn" mnemonicParsing="false" onAction="#handleBillingsButtonClick" styleClass="navbar-button-accountdetails" stylesheets="@style.css" text="Billings" />
+      <Button fx:id="myordersBtn" mnemonicParsing="false" onAction="#handleMyOrdersButtonClick" styleClass="navbar-button-accountdetails" stylesheets="@style.css" text="My Orders" />
+   </children>
+</HBox>
