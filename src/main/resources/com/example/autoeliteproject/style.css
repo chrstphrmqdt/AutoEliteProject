@@ -3,27 +3,27 @@
 }
 
 .background-image{
-    -fx-background-image: url('file:C:/Users/crit/IdeaProjects/AutoEliteProject/src/main/resources/com/example/autoeliteproject/images/bgcar2.jpg');
+    -fx-background-image: url('file:C:/Users/maqui/IdeaProjects/AutoEliteProjecttt/src/main/resources/com/example/autoeliteproject/images/bgcar2.jpg');
     -fx-background-size: cover;
     -fx-background-position: center;
 }
 .background-image2 {
-    -fx-background-image: url('file:C:/Users/crit/IdeaProjects/AutoEliteProject/src/main/resources/com/example/autoeliteproject/images/bgcaraboutus.jpg');
+    -fx-background-image: url('file:C:/Users/maqui/IdeaProjects/AutoEliteProjecttt/src/main/resources/com/example/autoeliteproject/images/bgcaraboutus.jpg');
     -fx-background-size: cover;
     -fx-background-position: center;
 }
 .background-image3 {
-    -fx-background-image: url('file:C:/Users/crit/IdeaProjects/AutoEliteProject/src/main/resources/com/example/autoeliteproject/images/bgoffice.jpg');
+    -fx-background-image: url('file:C:/Users/maqui/IdeaProjects/AutoEliteProjecttt/src/main/resources/com/example/autoeliteproject/images/bgoffice.jpg');
     -fx-background-size: cover;
     -fx-background-position: center;
 }
 .background-image4 {
-    -fx-background-image: url('file:C:/Users/crit/IdeaProjects/AutoEliteProject/src/main/resources/com/example/autoeliteproject/images/bghand.jpg');
+    -fx-background-image: url('file:C:/Users/maqui/IdeaProjects/AutoEliteProjecttt/src/main/resources/com/example/autoeliteproject/images/bghand.jpg');
     -fx-background-size: cover;
     -fx-background-position: center;
 }
 .background-image5 {
-    -fx-background-image: url('file:C:/Users/crit/IdeaProjects/AutoEliteProject/src/main/resources/com/example/autoeliteproject/images/bgshowroom.jpg');
+    -fx-background-image: url('file:C:/Users/maqui/IdeaProjects/AutoEliteProjecttt/src/main/resources/com/example/autoeliteproject/images/bgshowroom.jpg');
     -fx-background-size: cover;
     -fx-background-position: center;
 }
@@ -137,7 +137,7 @@
 
 /* Car Price */
 .car-price {
-    -fx-font-size: 20px;
+    -fx-font-size: 30px;
     -fx-font-weight: bold;
     -fx-text-fill: #101010; /* Price color */
 }
@@ -532,4 +532,16 @@
 }
 .white-bg{
     -fx-background-color: #dedddd;
+}
+
+.checkout-receipt{
+    -fx-background-color: #ffffff;
+    -fx-border-radius: 10px; /* Rounded corners */
+    -fx-border-color: #ccc; /* Border color */
+    -fx-border-width: 1px; /* Border width */
+    -fx-padding: 20px; /* Padding inside the card */
+    -fx-font-size: 14px;
+    -fx-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+    -fx-cursor: hand; /* Cursor style on hover */
+    -fx-effect: dropshadow(three-pass-box, #333333, 3, 0, 0, 0); /* Drop shadow effect */
 }

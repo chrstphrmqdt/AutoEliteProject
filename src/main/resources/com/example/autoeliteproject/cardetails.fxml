@@ -67,89 +67,6 @@
                               </TextFlow>
                            </children>
                         </VBox>
-                        <HBox alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="579.0">
-                           <children>
-                              <ImageView fitHeight="37.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@images/icons8-check-48.png" />
-                                 </image>
-                              </ImageView>
-                              <Label text="Advanced Driver Assistance">
-                                 <font>
-                                    <Font name="System Bold" size="16.0" />
-                                 </font>
-                                 <padding>
-                                    <Insets left="5.0" />
-                                 </padding>
-                              </Label>
-                              <ImageView fitHeight="37.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@images/icons8-check-48.png" />
-                                 </image>
-                                 <HBox.margin>
-                                    <Insets left="20.0" />
-                                 </HBox.margin>
-                              </ImageView>
-                              <Label text="Multi-Angle Rearview Camera">
-                                 <font>
-                                    <Font name="System Bold" size="16.0" />
-                                 </font>
-                                 <padding>
-                                    <Insets left="5.0" />
-                                 </padding>
-                              </Label>
-                           </children>
-                        </HBox>
-                        <HBox alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="579.0">
-                           <children>
-                              <ImageView fitHeight="37.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@images/icons8-check-48.png" />
-                                 </image>
-                              </ImageView>
-                              <Label text="Adaptive Cruise Control">
-                                 <font>
-                                    <Font name="System Bold" size="16.0" />
-                                 </font>
-                                 <padding>
-                                    <Insets left="5.0" />
-                                 </padding>
-                              </Label>
-                              <ImageView fitHeight="37.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@images/icons8-check-48.png" />
-                                 </image>
-                                 <HBox.margin>
-                                    <Insets left="20.0" />
-                                 </HBox.margin>
-                              </ImageView>
-                              <Label text="Premium Audio System Option">
-                                 <font>
-                                    <Font name="System Bold" size="16.0" />
-                                 </font>
-                                 <padding>
-                                    <Insets left="5.0" />
-                                 </padding>
-                              </Label>
-                           </children>
-                        </HBox>
-                        <HBox alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="579.0">
-                           <children>
-                              <ImageView fitHeight="37.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@images/icons8-check-48.png" />
-                                 </image>
-                              </ImageView>
-                              <Label text="Turbocharged Engine">
-                                 <font>
-                                    <Font name="System Bold" size="16.0" />
-                                 </font>
-                                 <padding>
-                                    <Insets left="5.0" />
-                                 </padding>
-                              </Label>
-                           </children>
-                        </HBox>
                      </children>
                   </VBox>
                   <VBox alignment="CENTER_LEFT" prefHeight="821.0" prefWidth="643.0">
@@ -219,27 +136,7 @@
                                           <Font name="System Bold" size="15.0" />
                                        </font>
                                     </Label>
-                                    <Label text="Mileage">
-                                       <font>
-                                          <Font name="System Bold" size="15.0" />
-                                       </font>
-                                    </Label>
                                     <Label text="Fuel Type">
-                                       <font>
-                                          <Font name="System Bold" size="15.0" />
-                                       </font>
-                                    </Label>
-                                    <Label text="Engine Size">
-                                       <font>
-                                          <Font name="System Bold" size="15.0" />
-                                       </font>
-                                    </Label>
-                                    <Label text="Doors">
-                                       <font>
-                                          <Font name="System Bold" size="15.0" />
-                                       </font>
-                                    </Label>
-                                    <Label text="Cylinders">
                                        <font>
                                           <Font name="System Bold" size="15.0" />
                                        </font>
@@ -286,27 +183,7 @@
                                           <Font size="15.0" />
                                        </font>
                                     </Label>
-                                    <Label text="0 miles">
-                                       <font>
-                                          <Font size="15.0" />
-                                       </font>
-                                    </Label>
                                     <Label text="Gasoline">
-                                       <font>
-                                          <Font size="15.0" />
-                                       </font>
-                                    </Label>
-                                    <Label text="2.0-liter 4-cylinder">
-                                       <font>
-                                          <Font size="15.0" />
-                                       </font>
-                                    </Label>
-                                    <Label text="4 doors">
-                                       <font>
-                                          <Font size="15.0" />
-                                       </font>
-                                    </Label>
-                                    <Label text="4 cylinders">
                                        <font>
                                           <Font size="15.0" />
                                        </font>

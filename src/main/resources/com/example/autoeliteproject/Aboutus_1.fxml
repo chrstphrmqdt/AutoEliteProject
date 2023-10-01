@@ -10,9 +10,17 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.text.TextFlow?>
 
-<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.autoeliteproject.navbarController">
+
+<BorderPane xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.autoeliteproject.navbarController">
+   <top>
+      <VBox prefHeight="0.0" prefWidth="1605.0" BorderPane.alignment="CENTER">
+         <children>
+            <fx:include source="navbar.fxml" />
+            <fx:include source="navbar2.fxml" />
+         </children></VBox>
+   </top>
    <center>
-      <VBox alignment="TOP_CENTER" prefHeight="529.0" prefWidth="1600.0" styleClass="background-image2" stylesheets="@style.css" BorderPane.alignment="CENTER">
+      <VBox alignment="CENTER" fillWidth="false" styleClass="background-image2" stylesheets="@style.css">
          <children>
             <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -30,7 +38,7 @@
                   <Font name="Century Gothic Bold" size="30.0" />
                </font>
             </Label>
-            <TextFlow prefHeight="0.0" prefWidth="1600.0" textAlignment="JUSTIFY">
+            <TextFlow prefHeight="48.0" prefWidth="600.0" textAlignment="JUSTIFY">
                <children>
                   <Text fill="#e1e1e1" strokeType="OUTSIDE" strokeWidth="0.0" text="At AutoElite, we're on a remarkable adventure in the world of cars. It all started with a deep love for cars and a big idea: to make buying vehicles easy and enjoyable. As you explore our history, you'll discover the important moments that shaped us into the sleek and modern car marketplace we are today.">
                      <font>
@@ -38,9 +46,6 @@
                      </font>
                   </Text>
                </children>
-               <padding>
-                  <Insets left="500.0" right="500.0" />
-               </padding>
             </TextFlow>
             <Label styleClass="text-overlay" stylesheets="@style.css" text="Our Mission and Values" textFill="WHITE">
                <font>
@@ -50,7 +55,7 @@
                   <Insets bottom="20.0" top="20.0" />
                </VBox.margin>
             </Label>
-            <TextFlow prefHeight="0.0" prefWidth="1600.0" textAlignment="JUSTIFY">
+            <TextFlow prefHeight="96.0" prefWidth="594.0" textAlignment="JUSTIFY">
                <children>
                   <Text fill="#e1e1e1" strokeType="OUTSIDE" strokeWidth="0.0" text="Our mission is more than just words; it's about making sure you have a smooth and hassle-free experience when you buy or sell a car. Learn about our core principles that guide everything we do, and find out why we're all about transparency, efficiency, and making sure everyone has a great time.">
                      <font>
@@ -58,19 +63,8 @@
                      </font>
                   </Text>
                </children>
-               <padding>
-                  <Insets left="500.0" right="500.0" />
-               </padding>
             </TextFlow>
          </children>
       </VBox>
    </center>
-   <top>
-      <VBox prefHeight="0.0" prefWidth="1605.0" BorderPane.alignment="CENTER">
-         <children>
-            <fx:include source="navbar.fxml" />
-            <fx:include source="navbar2.fxml" />
-         </children></VBox>
-   </top>
-
 </BorderPane>

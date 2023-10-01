@@ -15,7 +15,7 @@
 
 <BorderPane id="loginFrame" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1600.0" styleClass="background-image2" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.autoeliteproject.loginController">
    <center>
-      <VBox alignment="CENTER" prefHeight="381.0" prefWidth="965.0" stylesheets="@style.css">
+      <VBox alignment="CENTER" stylesheets="@style.css">
          <children>
             <ImageView id="loginLogo" fitHeight="72.0" fitWidth="153.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -30,7 +30,7 @@
                   <Font name="Century Gothic Bold" size="38.0" />
                </font>
             </Label>
-            <HBox alignment="CENTER" prefHeight="29.0" prefWidth="981.0">
+            <HBox alignment="CENTER">
                <children>
                   <ImageView fitHeight="31.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -50,7 +50,7 @@
                   <Insets bottom="20.0" top="50.0" />
                </VBox.margin>
             </HBox>
-            <HBox alignment="CENTER" prefHeight="13.0" prefWidth="981.0">
+            <HBox alignment="CENTER">
                <children>
                   <ImageView fitHeight="31.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -68,7 +68,7 @@
                </VBox.margin>
             </HBox>
             <Button fx:id="loginnowBtn" mnemonicParsing="false" onAction="#loginnowBtnClicked" prefHeight="50.0" prefWidth="205.0" styleClass="login-button" stylesheets="@style.css" text="Log In" />
-            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+            <HBox alignment="CENTER">
                <children>
                   <CheckBox fx:id="rememberCbox" mnemonicParsing="false" onAction="#rememberCboxClicked" styleClass="rememberme-checkbox" stylesheets="@style.css" text="Remember me" textFill="WHITE">
                      <font>
@@ -82,10 +82,10 @@
                   </Button>
                </children>
             </HBox>
-            <Button fx:id="donthaveaccBtn" mnemonicParsing="false" onAction="#handlesignupButtonClick" styleClass="donthaveacc-button" stylesheets="@style.css" text="Don't have an account yet?" />
+            <Button fx:id="donthaveaccBtn" mnemonicParsing="false" onAction="#donthaveaccBtnClicked" styleClass="donthaveacc-button" stylesheets="@style.css" text="Don't have an account yet?" />
             <Button fx:id="backtohomeBtn" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#handleBackToHomeButtonClick" styleClass="donthaveacc-button" stylesheets="@style.css" text="Back to Home">
                <VBox.margin>
-                  <Insets top="50.0" />
+                  <Insets />
                </VBox.margin>
             </Button>
          </children>
