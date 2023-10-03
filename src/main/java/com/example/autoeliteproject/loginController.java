@@ -4,12 +4,9 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
-import javafx.scene.control.CheckBox;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-
-import static com.example.autoeliteproject.SceneLoader.loadScene;
 
 public class loginController {
 
@@ -31,7 +28,7 @@ public class loginController {
     @FXML
     void donthaveaccBtnClicked() {
         // Handle "Don't have an account?" button click
-        SceneLoader.loadScene("signup.fxml", (Stage) donthaveaccBtn.getScene().getWindow());
+        SceneLoader.loadScene(SceneNames.SIGNUP, (Stage) donthaveaccBtn.getScene().getWindow());
     }
 
     @FXML
@@ -42,36 +39,29 @@ public class loginController {
 
     @FXML
     void loginnowBtnClicked() {
-        // Handle "Login" button click (implement login authentication logic here)
+        // Handle "Login" button click
         String username = usernameTf.getText();
         String password = passTf.getText();
 
-        // Perform authentication (replace with your authentication logic)
-        if (authenticateUser(username, password)) {
-            showAlert(Alert.AlertType.INFORMATION, "Login Success", "Welcome", "You have successfully logged in.");
-            // Navigate to the main application screen (replace with your desired screen)
-            SceneLoader.loadScene("homepage_loggedin.fxml", (Stage) loginnowBtn.getScene().getWindow());
-        } else {
-            showAlert(Alert.AlertType.ERROR, "Login Failed", "Authentication Error", "Invalid username or password.");
+        try {
+            AuthenticationService authService = new AuthenticationService();
+
+            if (authService.authenticate(username, password)) {
+                showAlert(Alert.AlertType.INFORMATION, "Login Success", "Welcome", "You have successfully logged in.");
+                clearFields();
+                SceneLoader.loadScene(SceneNames.HOMEPAGE_LOGGED_IN, (Stage) loginnowBtn.getScene().getWindow());
+            } else {
+                showAlert(Alert.AlertType.ERROR, "Login Failed", "Authentication Error", "Invalid username or password.");
+            }
+        } catch (Exception e) {
+            showAlert(Alert.AlertType.ERROR, "Error", "Authentication Error", "An error occurred during authentication.");
+            e.printStackTrace();
         }
     }
 
-    private boolean authenticateUser(String username, String password) {
-        try {
-            // Assuming you have a UserDao class to interact with the database
-            UserDao userDao = new UserDao();
-
-            // Retrieve the user data based on the username
-            User user = userDao.getUserByUsername(username);
-
-            // Check if the user exists and the password matches
-            if (user != null && user.getPassword().equals(password)) {
-                return true; // Authentication successful
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return false; // Authentication failed
+    @FXML
+    void handleBackToHomeButtonClick(ActionEvent actionEvent) {
+        SceneLoader.loadScene(SceneNames.HOMEPAGE, (Stage) backtohomeBtn.getScene().getWindow());
     }
 
     private void showAlert(Alert.AlertType type, String title, String header, String content) {
@@ -82,8 +72,8 @@ public class loginController {
         alert.showAndWait();
     }
 
-    public void handleBackToHomeButtonClick(ActionEvent actionEvent) {
-        SceneLoader.loadScene("Homepage.fxml", (Stage) backtohomeBtn.getScene().getWindow());
+    private void clearFields() {
+        usernameTf.clear();
+        passTf.clear();
     }
-
 }

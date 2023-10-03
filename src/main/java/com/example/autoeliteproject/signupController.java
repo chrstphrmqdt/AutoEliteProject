@@ -1,4 +1,5 @@
 package com.example.autoeliteproject;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
@@ -9,6 +10,8 @@ import javafx.stage.Stage;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import static com.example.autoeliteproject.SceneNames.LOGIN;
 
 public class signupController implements javafx.fxml.Initializable {
     @FXML
@@ -40,35 +43,38 @@ public class signupController implements javafx.fxml.Initializable {
 
         // Validate user input
         if (username.isEmpty() || password.isEmpty() || email.isEmpty()) {
-            // Show an error message dialog to inform the user that fields are required.
             showAlert(Alert.AlertType.ERROR, "Error", "Validation Error", "Please fill in all required fields.");
-            return; // Exit the method if validation fails.
+            return;
         }
 
-        // Create a User object with validated input
-        User user = new User();
-        user.setUsername(username);
-        user.setPassword(password);
-        user.setEmail(email);
-
-        // Attempt to create the user in the database
-        UserDao userDao = new UserDao();
         try {
+            UserDao userDao = new UserDao();
+
+            // Check if the username already exists
+            if (userDao.getUserByUsername(username) != null) {
+                showAlert(Alert.AlertType.ERROR, "Error", "Registration Error", "Username is already taken.");
+                return;
+            }
+
+            // You can similarly check for duplicate email addresses here
+
+            User user = new User();
+            user.setUsername(username);
+            user.setPassword(password);
+            user.setEmail(email);
+
             if (userDao.createUser(user)) {
-                System.out.println("User registered successfully.");
-                // Provide user feedback here if needed (e.g., a success message).
+                // Registration successful
+                showAlert(Alert.AlertType.INFORMATION, "Success", "Registration Successful", "You have successfully registered.");
+                // Redirect to the login page
+                SceneLoader.loadScene(LOGIN, (Stage) createBtn.getScene().getWindow());
             } else {
-                // Handle the case where user creation failed (e.g., due to a duplicate username).
                 showAlert(Alert.AlertType.ERROR, "Error", "Registration Error", "An error occurred while registering the user.");
             }
         } catch (Exception e) {
-            // Handle any exceptions that occur during database interaction.
             e.printStackTrace();
             showAlert(Alert.AlertType.ERROR, "Error", "Registration Error", "An error occurred while registering the user.");
         }
-
-        // Load the login scene (whether registration succeeded or not)
-        SceneLoader.loadScene("login.fxml", (Stage) createBtn.getScene().getWindow());
     }
 
     private void showAlert(Alert.AlertType type, String title, String header, String content) {
@@ -78,8 +84,8 @@ public class signupController implements javafx.fxml.Initializable {
         alert.setContentText(content);
         alert.showAndWait();
     }
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
     }
 }

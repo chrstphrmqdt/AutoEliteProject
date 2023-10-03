@@ -1,75 +1,112 @@
 package com.example.autoeliteproject;
+
+import javafx.scene.image.Image;
+
 public class Car {
-    private int carId;
-    private String makeName;
-    private String modelName;
-    private int year;
-    private String conditionName;
-    private String bodyTypeName;
-    private String transmissionName;
-    private String colorName;
+    private String carName;
+    private String carModel;
+    private String carPrice;
+    private String carImage;
 
-    public int getCarId() {
-        return carId;
+    private String bodytype;
+    private String color;
+    private String condition;
+    private String description;
+    private String year;
+
+    private String transmission;
+
+    private boolean sold;
+
+
+    // getters
+    public String getCarName() {
+        return carName;
     }
 
-    public void setCarId(int carId) {
-        this.carId = carId;
+    public boolean isSold() {
+        return sold;
     }
 
-    public String getMakeName() {
-        return makeName;
+    public String getTransmission() {
+        return transmission;
     }
 
-    public void setMakeName(String makeName) {
-        this.makeName = makeName;
+    public String getBodytype() {
+        return bodytype;
     }
 
-    public String getModelName() {
-        return modelName;
+    public String getColor() {
+        return color;
     }
 
-    public void setModelName(String modelName) {
-        this.modelName = modelName;
+    public String getCondition() {
+        return condition;
     }
 
-    public int getYear() {
+    public String getDescription() {
+        return description;
+    }
+
+    public String getYear() {
         return year;
     }
 
-    public void setYear(int year) {
+    public String getcarModel() {
+        return carModel;
+    }
+
+    public String getCarPrice() {
+        return carPrice;
+    }
+
+    public String getCarImage() {
+        return carImage;
+    }
+
+
+    // setters
+    public void setCarName(String carName) {
+        this.carName = carName;
+    }
+
+    public void setSold(boolean sold) {
+        this.sold = sold;
+    }
+    public void setcarModel(String carModel) {
+        this.carModel = carModel;
+    }
+
+    public void setCarPrice(String carPrice) {
+        this.carPrice = carPrice;
+    }
+
+    public void setBodytype(String bodytype) {
+        this.bodytype = bodytype;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setCondition(String condition) {
+        this.condition = condition;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setYear(String year) {
         this.year = year;
     }
 
-    public String getConditionName() {
-        return conditionName;
+
+    public void setCarImage(String carImage) {
+        this.carImage = carImage;
     }
 
-    public void setConditionName(String conditionName) {
-        this.conditionName = conditionName;
-    }
-
-    public String getBodyTypeName() {
-        return bodyTypeName;
-    }
-
-    public void setBodyTypeName(String bodyTypeName) {
-        this.bodyTypeName = bodyTypeName;
-    }
-
-    public String getTransmissionName() {
-        return transmissionName;
-    }
-
-    public void setTransmissionName(String transmissionName) {
-        this.transmissionName = transmissionName;
-    }
-
-    public String getColorName() {
-        return colorName;
-    }
-
-    public void setColorName(String colorName) {
-        this.colorName = colorName;
+    public void setTransmission(String transmission) {
+        this.transmission = transmission;
     }
 }

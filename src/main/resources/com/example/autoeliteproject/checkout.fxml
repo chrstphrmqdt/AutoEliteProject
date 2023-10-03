@@ -21,7 +21,7 @@
       <fx:include source="navbar.fxml" />
    </top>
    <center>
-      <ScrollPane>
+      <ScrollPane fitToHeight="true" fitToWidth="true">
          <content>
             <VBox alignment="TOP_CENTER">
                <children>
@@ -34,29 +34,29 @@
                                     <Font size="24.0" />
                                  </font>
                               </Label>
-                              <TextField fx:id="checkout_emailTf" prefHeight="4.0" prefWidth="557.0" promptText="Email" styleClass="text-field-checkout" stylesheets="@style.css" />
+                              <TextField fx:id="email" prefHeight="4.0" prefWidth="557.0" promptText="Email" styleClass="text-field-checkout" stylesheets="@style.css" />
                               <Label text="Delivery">
                                  <font>
                                     <Font size="24.0" />
                                  </font>
                               </Label>
-                              <TextField fx:id="countryTf" promptText="Country/Region" styleClass="text-field-checkout" stylesheets="@style.css" />
+                              <TextField fx:id="country" promptText="Country/Region" styleClass="text-field-checkout" stylesheets="@style.css" />
                               <HBox prefHeight="25.0" prefWidth="242.0" spacing="50.0">
                                  <children>
-                                    <TextField fx:id="checkout_firstnTf" prefHeight="25.0" prefWidth="174.0" promptText="First name" styleClass="text-field-checkout" stylesheets="@style.css" />
-                                    <TextField fx:id="checkout_lastnTf" prefHeight="25.0" prefWidth="192.0" promptText="Last name" styleClass="text-field-checkout" stylesheets="@style.css" />
+                                    <TextField fx:id="firstname" prefHeight="25.0" prefWidth="174.0" promptText="First name" styleClass="text-field-checkout" stylesheets="@style.css" />
+                                    <TextField fx:id="lastname" prefHeight="25.0" prefWidth="192.0" promptText="Last name" styleClass="text-field-checkout" stylesheets="@style.css" />
                                  </children>
                               </HBox>
                               <TextField promptText="Company (optional)" styleClass="text-field-checkout" stylesheets="@style.css" />
-                              <TextField fx:id="checkout_addressTf" promptText="Address" styleClass="text-field-checkout" stylesheets="@style.css" />
+                              <TextField fx:id="address" promptText="Address" styleClass="text-field-checkout" stylesheets="@style.css" />
                               <HBox prefHeight="0.0" prefWidth="557.0" spacing="50.0">
                                  <children>
-                                    <TextField fx:id="postalTf" prefHeight="37.0" prefWidth="177.0" promptText="Postal code" styleClass="text-field-checkout" stylesheets="@style.css" />
-                                    <TextField fx:id="cityTf" promptText="City" styleClass="text-field-checkout" stylesheets="@style.css" />
+                                    <TextField fx:id="postal" prefHeight="37.0" prefWidth="177.0" promptText="Postal code" styleClass="text-field-checkout" stylesheets="@style.css" />
+                                    <TextField fx:id="city" promptText="City" styleClass="text-field-checkout" stylesheets="@style.css" />
                                  </children>
                               </HBox>
-                              <TextField fx:id="regionTf" prefHeight="37.0" prefWidth="307.0" promptText="Region" styleClass="text-field-checkout" stylesheets="@style.css" />
-                              <TextField fx:id="phoneTf" promptText="Phone" styleClass="text-field-checkout" stylesheets="@style.css" />
+                              <TextField fx:id="region" prefHeight="37.0" prefWidth="307.0" promptText="Region" styleClass="text-field-checkout" stylesheets="@style.css" />
+                              <TextField fx:id="phone" promptText="Phone" styleClass="text-field-checkout" stylesheets="@style.css" />
                               <Label text="Shipping method">
                                  <font>
                                     <Font size="24.0" />
@@ -66,17 +66,17 @@
                                  <children>
                                     <HBox alignment="CENTER_LEFT" prefHeight="17.0" prefWidth="619.0">
                                        <children>
-                                          <RadioButton fx:id="shipping1Btn" mnemonicParsing="false" prefHeight="20.0" prefWidth="205.0" stylesheets="@style.css" text="Open Carrier Transport">
+                                          <RadioButton fx:id="shipping1" mnemonicParsing="false" onAction="#initialize" prefHeight="20.0" prefWidth="205.0" stylesheets="@style.css" text="Open Carrier Transport">
                                              <font>
                                                 <Font name="System Bold" size="14.0" />
                                              </font>
                                           </RadioButton>
-                                          <RadioButton fx:id="shipping2Btn" mnemonicParsing="false" prefHeight="20.0" prefWidth="200.0" text="Enclosed Carrier Transport">
+                                          <RadioButton fx:id="shipping2" mnemonicParsing="false" onAction="#initialize" prefHeight="20.0" prefWidth="200.0" text="Enclosed Carrier Transport">
                                              <font>
                                                 <Font name="System Bold" size="14.0" />
                                              </font>
                                           </RadioButton>
-                                          <RadioButton fx:id="shipping3Btn" mnemonicParsing="false" prefHeight="20.0" prefWidth="154.0" text="Expedited Shipping">
+                                          <RadioButton fx:id="shipping3" mnemonicParsing="false" onAction="#initialize" prefHeight="20.0" prefWidth="154.0" text="Expedited Shipping">
                                              <font>
                                                 <Font name="System Bold" size="14.0" />
                                              </font>
@@ -107,7 +107,7 @@
                            </children>
                         </VBox>
                         <Separator orientation="VERTICAL" prefHeight="885.0" prefWidth="104.0" />
-                        <VBox spacing="15.0">
+                        <VBox alignment="CENTER_LEFT" spacing="15.0">
                            <children>
                               <Label text="Payment">
                                  <font>
@@ -115,70 +115,38 @@
                                  </font>
                               </Label>
                               <Label text="All transactions are secure and encrypted." />
-                              <HBox alignment="CENTER" prefHeight="0.0" prefWidth="497.0" spacing="100.0">
+                              <HBox alignment="CENTER_LEFT">
                                  <children>
-                                    <RadioButton fx:id="shipping4Btn" mnemonicParsing="false" text="Credit card / Debit card">
+                                    <RadioButton fx:id="cashpayment" mnemonicParsing="false" text="Cash">
                                        <font>
-                                          <Font size="14.0" />
-                                       </font>
-                                    </RadioButton>
-                                    <RadioButton fx:id="shipping5Btn" mnemonicParsing="false" text="Cash on delivery">
-                                       <font>
-                                          <Font size="14.0" />
+                                          <Font size="18.0" />
                                        </font>
                                     </RadioButton>
                                  </children>
-                                 <padding>
-                                    <Insets bottom="20.0" top="20.0" />
-                                 </padding>
                               </HBox>
                               <VBox spacing="15.0">
                                  <children>
-                                    <Label text="Name on card">
-                                       <font>
-                                          <Font size="14.0" />
-                                       </font>
-                                    </Label>
-                                    <TextField fx:id="cardnameTf" promptText="John Doe" styleClass="text-field-checkout" stylesheets="@style.css">
-                                       <VBox.margin>
-                                          <Insets />
-                                       </VBox.margin>
-                                    </TextField>
-                                    <Label text="Card  information">
-                                       <font>
-                                          <Font size="14.0" />
-                                       </font>
-                                    </Label>
-                                    <TextField fx:id="cardnumTf" prefHeight="37.0" prefWidth="338.0" promptText="Card number" styleClass="text-field-checkout" stylesheets="@style.css">
-                                       <VBox.margin>
-                                          <Insets />
-                                       </VBox.margin>
-                                    </TextField>
-                                    <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="497.0" spacing="50.0">
-                                       <children>
-                                          <TextField fx:id="mmyyTf" promptText="MM / YY" styleClass="text-field-checkout" stylesheets="@style.css">
-                                             <HBox.margin>
-                                                <Insets />
-                                             </HBox.margin>
-                                          </TextField>
-                                          <TextField fx:id="cvvTf" promptText="CVV" styleClass="text-field-checkout" stylesheets="@style.css" />
-                                       </children>
-                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="497.0" spacing="50.0" />
                                  </children>
                               </VBox>
                               <HBox alignment="CENTER_LEFT" spacing="20.0">
                                  <children>
-                                    <ImageView fitHeight="132.0" fitWidth="193.0" pickOnBounds="true" preserveRatio="true">
+                                    <ImageView fx:id="imagecar" fitHeight="132.0" fitWidth="193.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
                                           <Image url="@images/cars/civic/honda-civic.png" />
                                        </image>
                                     </ImageView>
-                                    <Label text="Honda Civic">
+                                    <Label fx:id="carmake" text="Honda">
                                        <font>
                                           <Font name="System Bold" size="24.0" />
                                        </font>
                                     </Label>
-                                    <Label text="₱1,583,000">
+                                    <Label fx:id="carmodel" text="Civic">
+                                       <font>
+                                          <Font name="System Bold" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="pricecheckout" text="₱1,583,000">
                                        <font>
                                           <Font size="18.0" />
                                        </font>
@@ -187,35 +155,32 @@
                                  <VBox.margin>
                                     <Insets />
                                  </VBox.margin>
-                                 <padding>
-                                    <Insets bottom="50.0" top="50.0" />
-                                 </padding>
                               </HBox>
-                              <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="478.0">
+                              <HBox alignment="CENTER_LEFT" spacing="300.0">
                                  <children>
-                                    <VBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="344.0">
+                                    <VBox alignment="CENTER_LEFT">
                                        <children>
-                                          <Label prefHeight="17.0" prefWidth="196.0" text="Subtotal -">
+                                          <Label text="Subtotal -">
                                              <font>
                                                 <Font size="14.0" />
                                              </font>
                                           </Label>
                                        </children>
                                     </VBox>
-                                    <VBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="120.0">
+                                    <VBox alignment="CENTER_LEFT">
                                        <children>
-                                          <Label prefHeight="21.0" prefWidth="163.0" text="₱1,583,000">
+                                          <Label fx:id="subtotalprice" text="₱1,583,000">
                                              <font>
-                                                <Font name="System Bold" size="14.0" />
+                                                <Font name="System Bold Italic" size="14.0" />
                                              </font>
                                           </Label>
                                        </children>
                                     </VBox>
                                  </children>
                               </HBox>
-                              <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="478.0">
+                              <HBox alignment="CENTER_LEFT" spacing="300.0">
                                  <children>
-                                    <VBox alignment="CENTER_LEFT" prefHeight="20.0" prefWidth="344.0">
+                                    <VBox alignment="CENTER_LEFT">
                                        <children>
                                           <Label text="Shipping - ">
                                              <font>
@@ -224,20 +189,20 @@
                                           </Label>
                                        </children>
                                     </VBox>
-                                    <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0">
+                                    <VBox alignment="CENTER_LEFT">
                                        <children>
-                                          <Label text="₱100,000">
+                                          <Label fx:id="shippingfee" text="00.00">
                                              <font>
-                                                <Font size="14.0" />
+                                                <Font name="System Bold Italic" size="14.0" />
                                              </font>
                                           </Label>
                                        </children>
                                     </VBox>
                                  </children>
                               </HBox>
-                              <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="478.0">
+                              <HBox alignment="CENTER_LEFT" spacing="300.0">
                                  <children>
-                                    <VBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="345.0">
+                                    <VBox alignment="CENTER_LEFT">
                                        <children>
                                           <Label text="Total">
                                              <font>
@@ -246,18 +211,18 @@
                                           </Label>
                                        </children>
                                     </VBox>
-                                    <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0">
+                                    <VBox alignment="CENTER_LEFT">
                                        <children>
-                                          <Label text="₱1,683,000">
+                                          <Label fx:id="totalprice" text="00.0">
                                              <font>
-                                                <Font size="14.0" />
+                                                <Font name="System Bold Italic" size="14.0" />
                                              </font>
                                           </Label>
                                        </children>
                                     </VBox>
                                  </children>
                               </HBox>
-                              <Button fx:id="paynowBtn" mnemonicParsing="false" onAction="#handlepaynowButtonClick" prefHeight="25.0" prefWidth="543.0" styleClass="green-btn" stylesheets="@style.css" text="Pay now">
+                              <Button fx:id="paynowBtn" mnemonicParsing="false" onAction="#handlePayNowButtonClick" styleClass="green-btn" stylesheets="@style.css" text="Pay now">
                                  <VBox.margin>
                                     <Insets />
                                  </VBox.margin>

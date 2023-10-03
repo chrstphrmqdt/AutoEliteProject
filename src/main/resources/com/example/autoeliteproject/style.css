@@ -638,3 +638,18 @@
     -fx-scale-x: 1.05; /* Add a subtle scaling effect on hover */
     -fx-scale-y: 1.05;
 }
+.logobuttons{
+    -fx-background-color: transparent; /* Transparent background */
+    -fx-text-fill: #000000; /* White text color */
+    -fx-text-weight: bold;
+    -fx-font-family: "Arial";
+    -fx-font-size: 16px;
+    -fx-padding: 10px 20px; /* Padding for button size */
+    -fx-border-radius: 5px; /* Slightly rounded corners */
+    -fx-cursor: hand; /* Cursor style on hover */
+}
+.logobuttons:hover {
+    /*scale the button on hover*/
+    -fx-scale-x: 1.05; /* Add a subtle scaling effect on hover */
+    -fx-scale-y: 1.05;
+}

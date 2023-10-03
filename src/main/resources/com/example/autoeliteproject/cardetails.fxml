@@ -13,7 +13,7 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.text.TextFlow?>
 
-<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.autoeliteproject.cardetailController">
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.autoeliteproject.CardetailController">
    <top>
       <fx:include source="navbar.fxml" />
    </top>
@@ -24,7 +24,7 @@
                <children>
                   <VBox alignment="CENTER_LEFT" prefHeight="762.0" prefWidth="579.0">
                      <children>
-                        <ImageView fitHeight="336.0" fitWidth="579.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="imagecar" fitHeight="336.0" fitWidth="579.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@images/cars/civic/1.jpg" />
                            </image>
@@ -32,25 +32,6 @@
                               <Insets bottom="10.0" />
                            </VBox.margin>
                         </ImageView>
-                        <HBox alignment="CENTER_LEFT" prefHeight="125.0" prefWidth="583.0" spacing="10.0">
-                           <children>
-                              <ImageView fitHeight="162.0" fitWidth="186.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@images/cars/civic/5.jpg" />
-                                 </image>
-                              </ImageView>
-                              <ImageView fitHeight="162.0" fitWidth="186.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@images/cars/civic/6.jpg" />
-                                 </image>
-                              </ImageView>
-                              <ImageView fitHeight="124.0" fitWidth="263.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@images/cars/civic/4.jpg" />
-                                 </image>
-                              </ImageView>
-                           </children>
-                        </HBox>
                         <VBox alignment="CENTER_LEFT" prefHeight="112.0" prefWidth="873.0">
                            <padding>
                               <Insets top="20.0" />
@@ -58,7 +39,7 @@
                            <children>
                               <TextFlow prefHeight="105.0" prefWidth="895.0">
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="The Honda Civic is a stylish and reliable compact car known for its efficiency and modern design. It offers a choice of engines for a smooth ride, a user-friendly infotainment system, and advanced safety features. With sedan and hatchback options, it's versatile and fuel-efficient, making it a smart choice for everyday driving." textAlignment="JUSTIFY" wrappingWidth="711.55712890625">
+                                    <Text fx:id="description" strokeType="OUTSIDE" strokeWidth="0.0" text="The Honda Civic is a stylish and reliable compact car known for its efficiency and modern design. It offers a choice of engines for a smooth ride, a user-friendly infotainment system, and advanced safety features. With sedan and hatchback options, it's versatile and fuel-efficient, making it a smart choice for everyday driving." textAlignment="JUSTIFY" wrappingWidth="711.55712890625">
                                        <font>
                                           <Font size="17.0" />
                                        </font>
@@ -73,7 +54,15 @@
                      <children>
                         <HBox alignment="CENTER_LEFT" prefHeight="2.0" prefWidth="348.0">
                            <children>
-                              <Label prefHeight="46.0" prefWidth="571.0" text="Honda Civic">
+                              <Label fx:id="makeName" text="Honda">
+                                 <font>
+                                    <Font name="System Bold" size="50.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets right="20.0" />
+                                 </padding>
+                              </Label>
+                              <Label fx:id="modelName" text="Civic">
                                  <font>
                                     <Font name="System Bold" size="50.0" />
                                  </font>
@@ -82,12 +71,7 @@
                         </HBox>
                         <HBox alignment="CENTER_LEFT" prefHeight="9.0" prefWidth="348.0" spacing="10.0">
                            <children>
-                              <Label styleClass="car-price2" stylesheets="@style.css" text="₱">
-                                 <font>
-                                    <Font size="30.0" />
-                                 </font>
-                              </Label>
-                              <Label prefHeight="43.0" prefWidth="173.0" styleClass="car-price2" stylesheets="@style.css" text="1,583,000">
+                              <Label fx:id="price" prefHeight="51.0" prefWidth="253.0" styleClass="car-price2" stylesheets="@style.css" text="1,583,000">
                                  <font>
                                     <Font size="30.0" />
                                  </font>
@@ -143,37 +127,37 @@
                                     <Insets bottom="30.0" left="30.0" top="30.0" />
                                  </padding>
                                  <children>
-                                    <Label text="Honda">
+                                    <Label fx:id="makeName2" text="Honda">
                                        <font>
                                           <Font size="15.0" />
                                        </font>
                                     </Label>
-                                    <Label text="Civic">
+                                    <Label fx:id="modelName2" text="Civic">
                                        <font>
                                           <Font size="15.0" />
                                        </font>
                                     </Label>
-                                    <Label text="Red">
+                                    <Label fx:id="color" text="Red">
                                        <font>
                                           <Font size="15.0" />
                                        </font>
                                     </Label>
-                                    <Label text="Sedan">
+                                    <Label fx:id="bodytype" text="Sedan">
                                        <font>
                                           <Font size="15.0" />
                                        </font>
                                     </Label>
-                                    <Label text="Automatic">
+                                    <Label fx:id="transmission" text="Automatic">
                                        <font>
                                           <Font size="15.0" />
                                        </font>
                                     </Label>
-                                    <Label text="New">
+                                    <Label fx:id="condition" text="New">
                                        <font>
                                           <Font size="15.0" />
                                        </font>
                                     </Label>
-                                    <Label text="2023">
+                                    <Label fx:id="year" text="2023">
                                        <font>
                                           <Font size="15.0" />
                                        </font>
@@ -185,12 +169,12 @@
                               <Insets left="20.0" />
                            </padding>
                         </HBox>
-                        <Button fx:id="buynowBtn" mnemonicParsing="false" onAction="#handlebuynowButtonClick" prefHeight="25.0" prefWidth="453.0" styleClass="green-btn" stylesheets="@style.css" text="Buy Now">
+                        <Button fx:id="buynowBtn" mnemonicParsing="false" onAction="#handleBuyNowButtonClick" prefHeight="25.0" prefWidth="453.0" styleClass="green-btn" stylesheets="@style.css" text="Buy Now">
                            <VBox.margin>
                               <Insets top="20.0" />
                            </VBox.margin>
                         </Button>
-                        <Button fx:id="contactcsBtn" mnemonicParsing="false" onAction="#handlecontactcsButtonClick" prefHeight="25.0" prefWidth="453.0" styleClass="button-more-details" stylesheets="@style.css" text="Contact Customer Support">
+                        <Button fx:id="contactcsBtn" mnemonicParsing="false" onAction="#handleContactCustomerServiceButtonClick" prefHeight="25.0" prefWidth="453.0" styleClass="button-more-details" stylesheets="@style.css" text="Contact Customer Support">
                            <VBox.margin>
                               <Insets top="20.0" />
                            </VBox.margin>

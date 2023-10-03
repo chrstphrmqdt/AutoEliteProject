@@ -8,39 +8,44 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox fx:id="carcardVb" alignment="TOP_CENTER" prefHeight="238.0" prefWidth="198.0" styleClass="car-card" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.autoeliteproject.carcardsController">
-   <children>
-      <Label fx:id="carnameLb" prefHeight="47.0" prefWidth="239.0" styleClass="car-title" stylesheets="@style.css" text="Honda Civic" textFill="#ff2121">
+<VBox fx:id="carcardVb" alignment="TOP_CENTER" prefHeight="238.0" prefWidth="198.0" styleClass="car-card" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.autoeliteproject.CardController">
+    <children>
+        <Label fx:id="carnameLb" prefHeight="47.0" prefWidth="239.0" styleClass="car-title" stylesheets="@style.css" text="Honda Civic" textFill="#ff2121">
+            <font>
+                <Font name="Century Gothic" size="24.0" />
+            </font>
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+        </Label>
+      <Label fx:id="carmodelLb" prefHeight="47.0" prefWidth="239.0" styleClass="car-title" stylesheets="@style.css" text="Honda Civic" textFill="#ff2121">
          <font>
             <Font name="Century Gothic" size="24.0" />
          </font>
-         <VBox.margin>
-            <Insets left="10.0" />
-         </VBox.margin>
       </Label>
-      <ImageView fx:id="carImg" fitHeight="129.0" fitWidth="228.0" pickOnBounds="true" preserveRatio="true" styleClass="car-image">
-         <image>
-            <Image url="@images/cars/civic/honda-civic.png" />
-         </image>
-         <VBox.margin>
-            <Insets bottom="20.0" />
-         </VBox.margin>
-      </ImageView>
-      <Label fx:id="carpriceLb" prefHeight="54.0" prefWidth="292.0" styleClass="car-price" stylesheets="@style.css" text="₱1,583,000">
-         <font>
-            <Font name="Century Gothic Bold" size="24.0" />
-         </font>
-         <VBox.margin>
-            <Insets left="10.0" />
-         </VBox.margin>
-      </Label>
-      <Button fx:id="detailsBtn" alignment="BASELINE_RIGHT" mnemonicParsing="false" onAction="#handleDetailsButtonClick" prefHeight="45.0" prefWidth="370.0" styleClass="button-more-details" stylesheets="@style.css" text="More Details 🡪">
-         <font>
-            <Font size="20.0" />
-         </font>
-         <VBox.margin>
-            <Insets />
-         </VBox.margin>
-      </Button>
-   </children>
+        <ImageView fx:id="carImg" fitHeight="129.0" fitWidth="228.0" pickOnBounds="true" preserveRatio="true" styleClass="car-image">
+            <image>
+                <Image url="@images/cars/civic/honda-civic.png" />
+            </image>
+            <VBox.margin>
+                <Insets bottom="20.0" />
+            </VBox.margin>
+        </ImageView>
+        <Label fx:id="carpriceLb" prefHeight="54.0" prefWidth="292.0" styleClass="car-price" stylesheets="@style.css" text="₱1,583,000">
+            <font>
+                <Font name="Century Gothic Bold" size="24.0" />
+            </font>
+            <VBox.margin>
+                <Insets left="10.0" />
+            </VBox.margin>
+        </Label>
+        <Button fx:id="detailsBtn" alignment="BASELINE_RIGHT" mnemonicParsing="false" onAction="#handleDetailsButtonClick" prefHeight="45.0" prefWidth="370.0" styleClass="button-more-details" stylesheets="@style.css" text="More Details 🡪">
+            <font>
+                <Font size="20.0" />
+            </font>
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+        </Button>
+    </children>
 </VBox>
