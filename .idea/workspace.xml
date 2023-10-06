@@ -4,97 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af59d6c1-98e8-4965-b0b1-d63e7c19a7f3" name="Changes" comment="initial">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/accountController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/homepage_logged.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/cars/Honda Civic/honda-civic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/cars/ford-ecosport/ecosport.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/cars/ford-territory/territory.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/cars/honda-brio/honda brio.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/cars/honda-brv/brv.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/cars/honda-city/honda-city.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/cars/honda-city/honda-city.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/cars/toyota-fortuner/fortuner.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/cars/toyota-innova/innova.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/cars/toyota-rush/rush.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/CardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/CardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/CardetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/CardetailController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/SceneNames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/SceneNames.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/checkoutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/checkoutController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/homeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/homeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/joinusController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/joinusController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/loginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/loginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/navbar2Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/navbar2Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/navbarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/navbarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/navbarLoggedinController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/navbarLoggedinController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/navbaraccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/navbaraccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/signupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/signupController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/successContrller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/successContrller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/viewcarsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/autoeliteproject/viewcarsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/FAQ.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/accountinfo.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/accountinfo.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/billings.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/billings.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/checkout.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/checkout.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/contactuss.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/contactuss.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/homepage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/homepage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/homepage_loggedin.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/background.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/bg/background.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/bg6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/bg/bg6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/bgcar.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/bg/bgcar.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/bgcar2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/bg/bgcar2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/bgcaraboutus.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/bg/bgcaraboutus.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/bghand.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/bg/bghand.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/bglogin.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/bg/bglogin.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/bgoffice.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/bg/bgoffice.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/bgshowroom.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/bg/bgshowroom.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/contactu (1).png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/icons/contactu (1).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/contactu (2).png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/icons/contactu (2).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/emailicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/icons/emailicon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/icons8-arrow-50 (1) - Copy.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/icons/icons8-arrow-50 (1) - Copy.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/icons8-arrow-50 (1).png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/icons/icons8-arrow-50 (1).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/icons8-arrow-50.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/icons/icons8-arrow-50.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/icons8-car-seat-50 (1).png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/icons/icons8-car-seat-50 (1).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/icons8-check-48.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/icons/icons8-check-48.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/icons8-clock-50.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/icons/icons8-clock-50.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/icons8-email-50.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/icons/icons8-email-50.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/icons8-gas-station-50 (1).png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/icons/icons8-gas-station-50 (1).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/icons8-gear-stick-50 (1).png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/icons/icons8-gear-stick-50 (1).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/icons8-location-50.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/icons/icons8-location-50.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/icons8-phone-50.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/icons/icons8-phone-50.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/icons8-snowflake-64.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/icons/icons8-snowflake-64.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/pass.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/icons/pass.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/search_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/icons/search_icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/sucesss.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/icons/sucesss.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/user.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/icons/user.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/usericon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/icons/usericon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/infotop.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/myorders.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/myorders.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/navbar.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/navbar_loggedin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/navbar_logged.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/success.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/success.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/Honda Civic/Honda Civic.docx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/cars/Honda Civic/Honda Civic.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/Honda Civic/h1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/cars/Honda Civic/h1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/Honda Civic/h2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/cars/Honda Civic/h2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/Montero/Montero.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/Montero/mitsu 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/Montero/mitsu1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/Toyota Vios/Toyota Vios.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/Toyota Vios/vios1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/Toyota Vios/vios2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/Toyota Wigo/Toyota Wigo.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/Toyota Wigo/wigo1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/Toyota Wigo/wigo2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/ford-everest/everest.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/cars/ford-everest/everest.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/ford-ranger/ranger.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/cars/ford-ranger/ranger.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/honda-city/Honda City.docx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/cars/honda-city/Honda City.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/mitsubishi-mirage/mirage.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/cars/mitsubishi-mirage/mirage.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/mitsubishi-mirage/mirage.webp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/cars/mitsubishi-mirage/mirage.webp" afterDir="false" />
+    <list default="true" id="af59d6c1-98e8-4965-b0b1-d63e7c19a7f3" name="Changes" comment="FINAL">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/autoeliteproject/images/cars/ford-escape/escape.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,6 +42,9 @@
         <option name="mavenHome" value="Use Maven wrapper" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -228,7 +142,7 @@
       <workItem from="1696525498586" duration="590000" />
       <workItem from="1696526910878" duration="518000" />
       <workItem from="1696553690960" duration="1724000" />
-      <workItem from="1696555429828" duration="4625000" />
+      <workItem from="1696555429828" duration="4948000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <option name="closed" value="true" />
@@ -286,7 +200,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695828665006</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="FINAL">
+      <option name="closed" value="true" />
+      <created>1696560367488</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1696560367488</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,6 +228,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="initial" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial" />
+    <MESSAGE value="FINAL" />
+    <option name="LAST_COMMIT_MESSAGE" value="FINAL" />
   </component>
 </project>

@@ -1,0 +1,652 @@
+.top-bar{
+    -fx-background-color: rgba(26, 26, 26, 0.7);
+}
+
+.background-image{
+    -fx-background-image: url('images/bg/bgcar2.jpg');
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+.background-image2 {
+    -fx-background-image: url('images/bg/bgcaraboutus.jpg');
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+.background-image3 {
+    -fx-background-image: url('images/bg/bgoffice.jpg');
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+.background-image4 {
+    -fx-background-image: url('images/bg/bghand.jpg');
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+.background-image5 {
+    -fx-background-image: url('images/bg/bgshowroom.jpg');
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+.blackgradientbg{
+    -fx-background-color: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(107, 107, 107, 0.7), rgba(30, 30, 30, 0.7));
+}
+
+.transparent-background{
+    -fx-background-color: transparent;
+}
+
+.search_bar{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 25;
+
+}
+
+/* Modern Button Style */
+.button-explorenow {
+    -fx-background-color: #ff2222; /* Background color */
+    -fx-text-fill: white; /* Text color */
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 20px; /* Rounded corners for a smoother look */
+    -fx-cursor: hand; /* Cursor style on hover */
+    -fx-effect: dropshadow(three-pass-box, #333333, 10, 0, 0, 0); /* Add a subtle drop shadow */
+    -fx-background-insets: 0; /* Remove default button padding */
+    -fx-background-radius: 20px; /* Match the border radius */
+}
+
+/* Hover effect */
+.button-explorenow:hover {
+    -fx-background-color: #ff4343; /* Lighter background color on hover */
+    -fx-scale-x: 1.05; /* Add a subtle scaling effect on hover */
+    -fx-scale-y: 1.05;
+}
+
+.button-all {
+    -fx-background-color: transparent; /* Background color */
+    -fx-text-fill: rgb(0, 0, 0); /* Text color */
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 50%; /* Rounded corners for a smoother look */
+    -fx-cursor: hand; /* Cursor style on hover */
+    -fx-background-insets: 0; /* Remove default button padding */
+    -fx-background-radius: 30px; /* Match the border radius */
+}
+.button-all:hover {
+    -fx-text-fill: #000000; /* Text color */
+    -fx-scale-x: 1.05; /* Add a subtle scaling effect on hover */
+    -fx-scale-y: 1.05;
+}
+.button-FAQ {
+    -fx-background-color: transparent; /* Background color */
+    -fx-text-fill: rgb(0, 0, 0); /* Text color */
+    -fx-font-size: 18px;
+    -fx-font-weight: regular;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 50%; /* Rounded corners for a smoother look */
+    -fx-cursor: hand; /* Cursor style on hover */
+    -fx-background-insets: 0; /* Remove default button padding */
+    -fx-background-radius: 30px; /* Match the border radius */
+}
+.button-FAQ:hover {
+    -fx-text-fill: #ff0000; /* Text color */
+    -fx-scale-x: 1.05; /* Add a subtle scaling effect on hover */
+    -fx-scale-y: 1.05;
+}
+
+/* Transparent "More Details" Button */
+.button-more-details {
+    -fx-background-color: transparent; /* Transparent background */
+    -fx-text-fill: #ff5722; /* White text color */
+    -fx-font-size: 16px;
+    -fx-font-weight: regular;
+    -fx-padding: 10px 20px; /* Padding for button size */
+    -fx-border-radius: 5px; /* Slightly rounded corners */
+    -fx-cursor: hand; /* Cursor style on hover */
+}
+
+/* Hover effect */
+.button-more-details:hover {
+    -fx-font-weight: bold;
+}
+/* Transparent "More Details" Button */
+/* Car Inventory Card */
+.car-card {
+    -fx-background-color: white; /* Background color */
+    -fx-border-radius: 15px; /* Rounded corners */
+    -fx-border-width: 1px; /* Border width */
+    -fx-padding: 20px; /* Padding inside the card */
+    -fx-font-size: 14px;
+    -fx-cursor: hand; /* Cursor style on hover */
+}
+
+/* Hover effect */
+.car-card:hover {
+    -fx-effect: dropshadow(three-pass-box, #333333, 10, 0, 0, 0); /* Add a subtle drop shadow */
+    -fx-scale-x: 1.02; /* Add a subtle scaling effect on hover for a 3D effect */
+    -fx-scale-y: 1.02;
+}
+
+/* Car Title */
+.car-title {
+    -fx-font-weight: bold;
+    -fx-text-fill: #ce0b0b; /* Text color */
+    -fx-font-size: 25px;
+}
+
+/* Car Price */
+.car-price {
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #101010; /* Price color */
+}
+.car-price2 {
+    -fx-font-size: 35px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ff4400; /* Price color */
+}
+/* Car Image */
+.car-image {
+    -fx-max-width: 100%; /* Ensure the image doesn't exceed the card width */
+    -fx-max-height: 200px; /* Define the maximum height of the image */
+    -fx-clip: rect(0px, 300px, 200px, 0px); /* Clip the image to fit within the card */
+}
+/* Hbox bottom border only */
+.hbox-bottom-border{
+    -fx-border-color: #4a4a4a;
+    -fx-border-width: 0 0 1px 0;
+}
+
+.about-us-button {
+    -fx-background-color: transparent; /* Transparent background */
+    -fx-text-fill: #ffffff; /* White text color */
+    -fx-font-family: "Arial";
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px; /* Padding for button size */
+    -fx-border-radius: 5px; /* Slightly rounded corners */
+    -fx-cursor: hand; /* Cursor style on hover */
+}
+
+/* Add a hover effect for the buttons */
+.about-us-button:hover {
+    -fx-text-fill: #ff3600; /* White text color */
+}
+
+/* white background for the about us page */
+.about-us-background{
+    -fx-background-color: #ffffff;
+}
+
+/* card container for teams */
+.card-container{
+    -fx-background-color: transparent;
+    -fx-border-radius: 20px; /* Rounded corners */
+    -fx-border-width: 1px; /* Border width */
+    -fx-padding: 20px; /* Padding inside the card */
+    -fx-font-size: 14px;
+    -fx-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+    -fx-cursor: hand; /* Cursor style on hover */
+    -fx-effect: dropshadow(three-pass-box, #333333, 3, 0, 0, 0); /* Drop shadow effect */
+}
+.card-container:hover {
+    -fx-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4); /* Slightly larger box shadow on hover for elevation */
+    -fx-scale-x: 1.02; /* Add a subtle scaling effect on hover for a 3D effect */
+    -fx-scale-y: 1.02;
+}
+
+/* Style for the "Join Us!" button */
+.join-button {
+    -fx-background-color: #FF0000; /* Red background color */
+    -fx-text-fill: white; /* Text color */
+    -fx-font-family: "Arial";
+    -fx-font-size: 18px; /* Font size */
+    -fx-font-weight: bold; /* Font weight */
+    -fx-border-color: transparent; /* Remove button border */
+    -fx-padding: 10px 20px; /* Adjust padding for button size */
+    -fx-background-radius: 20px; /* Rounded corners */
+    -fx-cursor: hand; /* Change cursor on hover */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 10, 0, 0, 0); /* Shadow effect */
+    -fx-transition: all 0.3s; /* Transition duration */
+}
+
+/* Hover effect for the button */
+.join-button:hover {
+    -fx-background-color: #CC0000; /* Darker red background color on hover */
+    -fx-transform: scale(1.05); /* Slight scale-up effect on hover */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 10, 0, 0, 0); /* Shadow effect on hover */
+}
+/* Style for FAQ Toggle Buttons */
+.toggle-button-FAQ {
+    -fx-background-color: #EDEDED; /* Background color when unselected */
+    -fx-background-radius: 15; /* Rounded corners */
+    -fx-font-family: Arial;
+    -fx-padding: 10px 20px; /* Adjust padding for button size */
+    -fx-text-fill: #333333; /* Text color */
+    -fx-font-size: 16px; /* Font size */
+    -fx-font-weight: bold; /* Font weight */
+    -fx-cursor: hand; /* Change cursor on hover */
+
+}
+
+/* Style for selected Toggle Button */
+.toggle-button-FAQ:selected {
+    -fx-text-fill: #ff0000; /* Text color when selected */
+}
+.FAQ-bottom-border{
+    -fx-border-color: #4a4a4a;
+    -fx-border-width: 0 0 1px 0;
+}
+.background-login{
+    -fx-background-image: url('images/bg/bglogin.jpg');
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+.login-form-bgcolor{
+    -fx-background-color: rgba(0, 0, 0, 0.82);
+}
+.text-field-login{
+    -fx-background-color: transparent;
+    -fx-font-family: "Arial";
+    -fx-background-radius: 25;
+    -fx-font-size: 16px;
+    -fx-border-radius: 25;
+    -fx-border-color: #9d9d9d;
+    -fx-border-width: 1px;
+    -fx-text-fill: #ffffff;
+}
+
+.login-button{
+    -fx-background-color: #ff2222; /* Background color */
+    -fx-text-fill: white; /* Text color */
+    -fx-font-family: "Arial";
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 20px; /* Rounded corners for a smoother look */
+    -fx-cursor: hand; /* Cursor style on hover */
+    -fx-effect: dropshadow(three-pass-box, #333333, 10, 0, 0, 0); /* Add a subtle drop shadow */
+    -fx-background-insets: 0; /* Remove default button padding */
+    -fx-background-radius: 20px; /* Match the border radius */
+}
+.login-button:hover {
+    -fx-background-color: #ff4343; /* Lighter background color on hover */
+    -fx-scale-x: 1.05; /* Add a subtle scaling effect on hover */
+    -fx-scale-y: 1.05;
+}
+
+.forgotpass-button{
+    -fx-background-color: transparent; /* Transparent background */
+    -fx-text-fill: #ffffff; /* White text color */
+    -fx-font-family: "Arial";
+    -fx-font-size: 13px;
+    -fx-font-weight: italic;
+    -fx-padding: 10px 20px; /* Padding for button size */
+    -fx-border-radius: 5px; /* Slightly rounded corners */
+    -fx-cursor: hand; /* Cursor style on hover */
+}
+.forgotpass-button:hover {
+    -fx-text-fill: #ff3600; /* White text color */
+}
+
+.donthaveacc-button{
+    -fx-background-color: transparent; /* Transparent background */
+    -fx-text-fill: #ffffff; /* White text color */
+    -fx-font-family: "Arial";
+    -fx-font-size: 13px;
+    -fx-font-weight: italic;
+    -fx-padding: 10px 20px; /* Padding for button size */
+    -fx-border-radius: 5px; /* Slightly rounded corners */
+    -fx-cursor: hand; /* Cursor style on hover */
+}
+.donthaveacc-button:hover {
+    -fx-text-fill: #ff3600; /* White text color */
+}
+.datepicker-signup{
+    -fx-background-color: transparent;
+    -fx-font-family: "Arial";
+    -fx-font-size: 16px;
+    -fx-border-color: #9d9d9d;
+    -fx-border-width: 1px;
+    -fx-text-fill: #ffffff;
+}
+/* Define a style class for your ComboBoxes */
+.combo-box {
+    -fx-background-color: white; /* Background color (white) */
+    -fx-text-fill: black; /* Text color (black) */
+    -fx-border-radius: 10px; /* Rounded corners */
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+
+/* Define a style for the selected item in the ComboBox dropdown */
+.combo-box .list-cell:selected {
+    -fx-background-color: #000000; /* Background color for selected item (white) */
+    -fx-text-fill: #ffffff; /* Text color for selected item (black) */
+}
+
+/* Define a style for the ComboBox arrow button */
+.combo-box .arrow-button {
+    -fx-background-color: white; /* Arrow button background color (white) */
+}
+
+/* Define a style for the ComboBox arrow icon */
+.combo-box .arrow {
+    -fx-fill: black; /* Arrow icon color (black) */
+}
+.container {
+    -fx-background-color: rgba(40, 40, 40, 0.6); /* Background color (red) */
+    -fx-effect: dropshadow(three-pass-box, #000000, 10, 0, 0, 0); /* Red drop shadow effect */
+}
+/* Customize the track of the slider */
+.slider .track {
+    -fx-background-color: linear-gradient(to right, #212121, #ff0000); /* Gradient track color */
+    -fx-background-insets: 0, 1; /* Background insets */
+    -fx-background-radius: 0.25em; /* Rounded corners */
+
+}
+
+/* Customize the thumb (slider handle) */
+.slider .thumb {
+    -fx-background-color: #ff0000; /* Thumb color (red) */
+    -fx-padding: 10px; /* Padding around the thumb */
+    -fx-background-radius: 0.25em; /* Rounded corners */
+    -fx-graphic: null; /* Remove the default graphic */
+}
+
+/* Customize the tick marks */
+.slider .thumb .thumb-text {
+    -fx-fill: white; /* Text color */
+    -fx-font-size: 12px; /* Font size of tick mark labels */
+}
+
+/* Customize the tick marks */
+.slider .minor-tick-mark {
+    -fx-background-color: #ff5555; /* Minor tick mark color (lighter red) */
+    -fx-background-radius: 0.1em; /* Rounded corners */
+}
+
+/* Customize the major tick marks */
+.slider .major-tick-mark {
+    -fx-background-color: #ff0000; /* Major tick mark color (red) */
+    -fx-background-radius: 0.2em; /* Rounded corners */
+
+}
+
+/* Customize the labels (tooltip) */
+.slider .axis-label {
+    -fx-background-color: #ff5555; /* Label background color (lighter red) */
+    -fx-background-radius: 0.1em; /* Rounded corners */
+    -fx-font-size: 14px; /* Font size of labels */
+    -fx-text-fill: white; /* Label text color */
+}
+.nav-bar{
+    -fx-background-color: rgb(28, 28, 28);
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: transparent transparent #890000 transparent;
+    -fx-transition: all 0.3s ease;
+}
+.nav-bar:hover{
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: transparent transparent #ff0000 transparent;
+    -fx-transition: all 0.3s ease;
+}
+.navbar-bg{
+    /* make transparent bg */
+    -fx-background-color: rgb(28, 28, 28);
+}
+.navbar-bg2{
+    /* make transparent bg */
+    -fx-background-color: rgb(233, 233, 233);
+}
+.carinventory-bg{
+    -fx-background-color: rgb(236, 236, 236);
+}
+.information-row-top{
+    -fx-background-color: rgb(21, 21, 21);
+    -fx-border-width: 0 0 1 0;
+    -fx-transition: all 0.3s ease;
+}
+
+.car-imagedisplay{
+    -fx-border-radius: 10px; /* Rounded corners */
+    -fx-border-color: #ccc; /* Border color */
+    -fx-border-width: 2px; /* Border width */
+    -fx-padding: 10px; /* Padding around the image */
+}
+
+.red-btn{
+    -fx-background-color: #ff4b22; /* Background color */
+    -fx-text-fill: white; /* Text color */
+    -fx-font-family: "Arial";
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 12px; /* Rounded corners for a smoother look */
+    -fx-cursor: hand; /* Cursor style on hover */
+    -fx-effect: dropshadow(three-pass-box, #333333, 10, 0, 0, 0); /* Add a subtle drop shadow */
+    -fx-background-insets: 0; /* Remove default button padding */
+    -fx-background-radius: 12px; /* Match the border radius */
+}
+.red-btn:hover {
+    -fx-background-color: #ff6543; /* Lighter background color on hover */
+    -fx-scale-x: 1.05; /* Add a subtle scaling effect on hover */
+    -fx-scale-y: 1.05;
+}
+
+.green-btn{
+    -fx-background-color: #05cd51; /* Background color */
+    -fx-text-fill: white; /* Text color */
+    -fx-font-family: "Arial";
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 12px; /* Rounded corners for a smoother look */
+    -fx-cursor: hand; /* Cursor style on hover */
+    -fx-effect: dropshadow(three-pass-box, #333333, 10, 0, 0, 0); /* Add a subtle drop shadow */
+    -fx-background-insets: 0; /* Remove default button padding */
+    -fx-background-radius: 12px; /* Match the border radius */
+}
+.green-btn:hover {
+    -fx-background-color: #1cd563; /* Lighter background color on hover */
+    -fx-scale-x: 1.05; /* Add a subtle scaling effect on hover */
+    -fx-scale-y: 1.05;
+}
+
+/* check-out text fields css */
+.text-field-checkout{
+    -fx-background-color: transparent;
+    -fx-background-radius: 25;
+    -fx-font-size: 16px;
+    -fx-border-radius: 25;
+    -fx-border-color: #9d9d9d;
+    -fx-border-width: 1px;
+    -fx-text-fill: #5b5b5b;
+}
+
+/* styles.css */
+.custom-image-view {
+    -fx-effect: dropshadow(gaussian, rgb(167, 0, 0), 10, 0, 0, 5); /* Drop shadow effect */
+}
+/* Apply styles to the text fields within the "GET IN TOUCH" section */
+.contact-textfield {
+    -fx-background-color: #f2f2f2; /* Background color */
+    -fx-border-color: #ccc; /* Border color */
+    -fx-border-width: 1px; /* Border width */
+    -fx-border-radius: 5px; /* Border radius */
+    -fx-pref-width: 300px; /* Preferred width */
+    -fx-pref-height: 40px; /* Preferred height */
+    -fx-font-size: 14px; /* Font size */
+    -fx-padding: 5px; /* Padding */
+}
+
+/* Apply styles to the text within the text fields */
+.contact-textfield .text {
+    -fx-fill: #333; /* Text color */
+}
+
+/* Apply hover effect to the text fields */
+.contact-textfield:hover {
+    -fx-border-color: #0073e6; /* Border color on hover */
+}
+/* Apply styles to the TextArea within the "GET IN TOUCH" section */
+.contact-textarea {
+    -fx-background-color: #f2f2f2; /* Background color */
+    -fx-border-color: #ccc; /* Border color */
+    -fx-border-width: 1px; /* Border width */
+    -fx-border-radius: 5px; /* Border radius */
+    -fx-pref-width: 300px; /* Preferred width */
+    -fx-pref-height: 120px; /* Preferred height */
+    -fx-font-size: 14px; /* Font size */
+    -fx-padding: 5px; /* Padding */
+}
+
+/* Apply styles to the button */
+.contact-button {
+    -fx-background-color: #e64500; /* Background color */
+    -fx-text-fill: white; /* Text color */
+    -fx-font-size: 16px; /* Font size */
+    -fx-font-weight: bold;
+    -fx-pref-width: 150px; /* Preferred width */
+    -fx-pref-height: 40px; /* Preferred height */
+    -fx-border-radius: 5px; /* Border radius */
+}
+
+/* Apply hover effect to the button */
+.contact-button:hover {
+    -fx-background-color: #b30000; /* Background color on hover */
+}
+/* Apply styles to the StackPane */
+.container-stackpane {
+    -fx-background-color: rgb(25, 25, 25); /* Red background color */
+    -fx-background-radius: 10px; /* Rounded border radius */
+    -fx-border-color: #b00000; /* Border color */
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-radius: 10px; /* Rounded border radius */
+    -fx-padding: 20px; /* Padding inside the container */
+}
+
+/* Apply hover effect */
+.container-stackpane:hover {
+    -fx-background-color: rgb(25, 25, 25); /* Red background color */
+    -fx-border-color: #ff0000; /* Border color on hover */
+    -fx-effect: dropshadow(gaussian, #ff0000, 50, 0, 0, 0); /* Glow effect on hover */
+    -fx-scale-x: 1.02; /* Add a subtle scaling effect on hover for a 3D effect */
+    -fx-scale-y: 1.02;
+}
+.white-bg{
+    -fx-background-color: #dedddd;
+}
+
+.checkout-receipt{
+    -fx-background-color: #ffffff;
+    -fx-border-radius: 10px; /* Rounded corners */
+    -fx-border-color: #ccc; /* Border color */
+    -fx-border-width: 1px; /* Border width */
+    -fx-padding: 20px; /* Padding inside the card */
+    -fx-font-size: 14px;
+    -fx-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+    -fx-cursor: hand; /* Cursor style on hover */
+    -fx-effect: dropshadow(three-pass-box, #333333, 3, 0, 0, 0); /* Drop shadow effect */
+}
+
+/*design for account information textfields*/
+
+.text-field-accountinfo{
+    -fx-background-color: transparent;
+    -fx-font-family: "Arial";
+    -fx-font-size: 16px;
+    -fx-border-color: #ff0000;
+    -fx-border-width: 1px;
+    -fx-text-fill: #171717;
+    /* make bottom border visible only */
+}
+
+/* design for navbar buttons for account details */
+.navbar-button-accountdetails{
+    -fx-background-color: #1c1c1c; /* Transparent background */
+    -fx-text-fill: #e9e9e9; /* White text color */
+    -fx-font-family: "Arial";
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand; /* Cursor style on hover */
+}
+.navbar-button-accountdetails:hover {
+    -fx-text-fill: #ff3600; /* White text color */
+}
+
+
+/* design for delete account button */
+.delete-account-button{
+    -fx-background-color: #transparent; /* Background color */
+    -fx-text-fill: #ff0000; /* Text color */
+    -fx-font-family: "Arial";
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 20px; /* Rounded corners for a smoother look */
+    -fx-cursor: hand; /* Cursor style on hover */
+    -fx-background-insets: 0; /* Remove default button padding */
+    -fx-background-radius: 20px; /* Match the border radius */
+}
+.delete-account-button:hover {
+    -fx-scale-x: 1.05; /* Add a subtle scaling effect on hover */
+    -fx-scale-y: 1.05;
+}
+
+/*design for update account button */
+.update-account-button{
+    -fx-background-color: #52ff22; /* Background color */
+    -fx-text-fill: #1e1e1e; /* Text color */
+    -fx-font-family: "Arial";
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 20px; /* Rounded corners for a smoother look */
+    -fx-cursor: hand; /* Cursor style on hover */
+    -fx-effect: dropshadow(three-pass-box, #333333, 10, 0, 0, 0); /* Add a subtle drop shadow */
+    -fx-background-insets: 0; /* Remove default button padding */
+    -fx-background-radius: 20px; /* Match the border radius */
+}
+.update-account-button:hover {
+    -fx-background-color: #72ff43; /* Lighter background color on hover */
+    -fx-scale-x: 1.05; /* Add a subtle scaling effect on hover */
+    -fx-scale-y: 1.05;
+}
+
+/* design for save button */
+.save-button{
+    -fx-background-color: #d8d8d8; /* Background color */
+    -fx-text-fill: #868686; /* Text color */
+    -fx-font-family: "Arial";
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5px; /* Rounded corners for a smoother look */
+    -fx-cursor: hand; /* Cursor style on hover */
+    -fx-background-insets: 0; /* Remove default button padding */
+    -fx-background-radius: 5px; /* Match the border radius */
+}
+.save-button:hover {
+    -fx-text-fill: #ffffff; /* Text color */
+    -fx-background-color: #1145f8; /* Lighter background color on hover */
+    -fx-scale-x: 1.05; /* Add a subtle scaling effect on hover */
+    -fx-scale-y: 1.05;
+}
+.logobuttons{
+    -fx-background-color: transparent; /* Transparent background */
+    -fx-text-fill: #000000; /* White text color */
+    -fx-text-weight: bold;
+    -fx-font-family: "Arial";
+    -fx-font-size: 16px;
+    -fx-padding: 10px 20px; /* Padding for button size */
+    -fx-border-radius: 5px; /* Slightly rounded corners */
+    -fx-cursor: hand; /* Cursor style on hover */
+}
+.logobuttons:hover {
+    /*scale the button on hover*/
+    -fx-scale-x: 1.05; /* Add a subtle scaling effect on hover */
+    -fx-scale-y: 1.05;
+}
