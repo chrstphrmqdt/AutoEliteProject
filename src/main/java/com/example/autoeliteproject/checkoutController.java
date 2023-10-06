@@ -2,12 +2,7 @@ package com.example.autoeliteproject;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.RadioButton;
-import javafx.scene.control.TextField;
-import javafx.scene.control.ToggleGroup;
+import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
@@ -38,14 +33,12 @@ public class checkoutController {
     @FXML
     private Label subtotalprice;
 
-    @FXML
-    private Label shippingfee;
 
     @FXML
     private TextField address;
 
     @FXML
-    private RadioButton cashpayment;
+    private Label taxLabel;
 
     @FXML
     private TextField city;
@@ -73,16 +66,6 @@ public class checkoutController {
 
     @FXML
     private TextField region;
-
-    @FXML
-    private RadioButton shipping1;
-
-    @FXML
-    private RadioButton shipping2;
-
-    @FXML
-    private RadioButton shipping3;
-
     private Car selectedCar;
 
     @FXML
@@ -90,15 +73,16 @@ public class checkoutController {
 
     @FXML
     void initialize() {
-        shipping1.setOnAction(event -> updateTotalPrice());
-        shipping2.setOnAction(event -> updateTotalPrice());
-        shipping3.setOnAction(event -> updateTotalPrice());
+        updateTotalPrice();
     }
 
     private void updateTotalPrice() {
         double total = calculateTotalPrice();
         totalprice.setText(String.format("₱ %.2f", total)); // Update total price label
-        shippingfee.setText(String.format("₱ %.2f", total - calculateSubtotal())); // Update shipping fee label
+        double tax = calculateTax();
+        taxLabel.setText(String.format("₱ %.2f", tax)); // Display tax label
+        double subtotal = calculateSubtotal();
+        subtotalprice.setText(formatAsCurrency(subtotal)); // Display subtotal label
     }
     private double calculateSubtotal() {
         // Remove non-numeric characters and currency symbol (₱)
@@ -115,19 +99,16 @@ public class checkoutController {
 
     //method to set car details
     private double calculateTotalPrice() {
-        double shippingFee = 0.00;
-
-        if (shipping1.isSelected()) {
-            shippingFee = 10000.00;
-        } else if (shipping2.isSelected()) {
-            shippingFee = 100000.00;
-        } else if (shipping3.isSelected()) {
-            shippingFee = 200000.00;
-        }
-
         double subtotal = calculateSubtotal();
-        double total = subtotal + shippingFee;
+        double tax = calculateTax();
+        double total = subtotal + tax;
         return total;
+    }
+
+    private double calculateTax() {
+        double taxRate = 0.10;  // 10% tax rate
+        double subtotal = calculateSubtotal();
+        return subtotal * taxRate;
     }
 
     public void setCarDetails(Car car) {
@@ -138,7 +119,17 @@ public class checkoutController {
             carmodel.setText(selectedCar.getcarModel());
             pricecheckout.setText(selectedCar.getCarPrice());
             subtotalprice.setText(selectedCar.getCarPrice());
-            shippingfee.setText("0.00");
+
+            // Calculate subtotal, tax, and total
+            double subtotal = calculateSubtotal();
+            double tax = calculateTax();
+            double total = subtotal + tax;
+
+            // Update labels
+            taxLabel.setText(String.format("₱ %.2f", tax));
+            totalprice.setText(String.format("₱ %.2f", total));
+            subtotalprice.setText(formatAsCurrency(subtotal));
+            pricecheckout.setText(formatAsCurrency(subtotal));
 
             Image carImage = new Image(selectedCar.getCarImage());
             imagecar.setImage(carImage);
@@ -184,8 +175,6 @@ public class checkoutController {
             }
         }
     }
-
-    // calculate total price
 
 
     private boolean validateInput(String firstName, String lastName, String email, String phone, String address, String city, String postal, String region, String country) {
@@ -236,14 +225,14 @@ public class checkoutController {
     }
 
     private boolean processPayment(String firstName, String lastName, String email, double totalPrice) {
-        // Simulate a payment process
         try {
-            // Add any necessary logic for actual payment processing here
+            String transactionId = generateTransactionId();
+            logPaymentTransaction(firstName, lastName, email, totalPrice, transactionId);
 
-            // Display a success message
             NumberFormat currencyFormatter = NumberFormat.getCurrencyInstance(new Locale("en", "PH"));
             String formattedTotalPrice = currencyFormatter.format(totalPrice);
             String paymentMessage = "Payment successful!\n\n" +
+                    "Transaction ID: " + transactionId + "\n" +
                     "Customer: " + firstName + " " + lastName + "\n" +
                     "Email: " + email + "\n" +
                     "Total Amount: " + formattedTotalPrice;
@@ -252,60 +241,53 @@ public class checkoutController {
 
             return true;
         } catch (Exception e) {
-            // Handle payment failure
-            showAlert("Payment failed. Please try again later.", Alert.AlertType.ERROR);
+            showAlert("Payment failed. Please check your payment details and try again.", Alert.AlertType.ERROR);
             e.printStackTrace();
             return false;
         }
     }
 
-    private String generateOrderConfirmation(String firstName, String lastName, String email, double totalPrice) {
-        // Format the total price as currency
-        NumberFormat currencyFormatter = NumberFormat.getCurrencyInstance(new Locale("en", "PH"));
-        String formattedTotalPrice = currencyFormatter.format(totalPrice);
-
-        // Generate the order confirmation message
-        StringBuilder confirmationMessage = new StringBuilder();
-        confirmationMessage.append("Order Confirmation\n\n");
-        confirmationMessage.append("Customer: ").append(firstName).append(" ").append(lastName).append("\n");
-        confirmationMessage.append("Email: ").append(email).append("\n");
-        confirmationMessage.append("Total Amount: ").append(formattedTotalPrice).append("\n\n");
-        confirmationMessage.append("Thank you for your order!");
-
-        return confirmationMessage.toString();
+    private String generateTransactionId() {
+        return "TXN-" + System.currentTimeMillis() + "-" + (int) (Math.random() * 1000);
     }
 
-    private void saveOrderToDatabase(String firstName, String lastName, String email, String phone, String address, String city, String postal, String region, String country, double totalPrice, String orderConfirmation) {
-        Connection connection = null;
-        PreparedStatement preparedStatement = null;
-
+    private void logPaymentTransaction(String firstName, String lastName, String email, double totalPrice, String transactionId) {
         try {
-            // Configure database connection
-            String jdbcUrl = "jdbc:mysql://localhost:3306/autoelite";
-            String dbUsername = "root";
-            String dbPassword = "";
+            String logMessage = "Transaction ID: " + transactionId + ", Customer: " + firstName + " " + lastName +
+                    ", Email: " + email + ", Amount: $" + totalPrice + ", Timestamp: " + System.currentTimeMillis();
+            Logger.getLogger(checkoutController.class.getName()).log(Level.INFO, logMessage);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
-            // Establish the database connection
-            connection = DriverManager.getConnection(jdbcUrl, dbUsername, dbPassword);
 
-            // Define the SQL query to insert the order into the database
-            String insertQuery = "INSERT INTO orders (first_name, last_name, email, phone, address, city, postal, region, country, total_price, order_confirmation) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
-            // Create a PreparedStatement with the insertQuery
-            preparedStatement = connection.prepareStatement(insertQuery);
-            preparedStatement.setString(1, firstName);
-            preparedStatement.setString(2, lastName);
-            preparedStatement.setString(3, email);
-            preparedStatement.setString(4, phone);
-            preparedStatement.setString(5, address);
-            preparedStatement.setString(6, city);
-            preparedStatement.setString(7, postal);
-            preparedStatement.setString(8, region);
-            preparedStatement.setString(9, country);
-            preparedStatement.setDouble(10, totalPrice);
-            preparedStatement.setString(11, orderConfirmation);
 
-            // Execute the SQL statement to insert the order
+    private String generateOrderConfirmation(String firstName, String lastName, String email, double totalPrice) {
+        String formattedTotalPrice = formatAsCurrency(totalPrice);
+
+        return "Order Confirmation\n\n" +
+                "Customer: " + fullName(firstName, lastName) + "\n" +
+                "Email: " + email + "\n" +
+                "Total Amount: " + formattedTotalPrice + "\n\n" +
+                "Thank you for your order!";
+    }
+
+    private String formatAsCurrency(double amount) {
+        NumberFormat currencyFormatter = NumberFormat.getCurrencyInstance(new Locale("en", "PH"));
+        return currencyFormatter.format(amount);
+    }
+
+    private String fullName(String firstName, String lastName) {
+        return firstName + " " + lastName;
+    }
+
+
+    private void saveOrderToDatabase(String firstName, String lastName, String email, String phone, String address, String city, String postal, String region, String country, double totalPrice, String orderConfirmation) {
+        try (Connection connection = establishDatabaseConnection();
+             PreparedStatement preparedStatement = createInsertPreparedStatement(connection, firstName, lastName, email, phone, address, city, postal, region, country, totalPrice, orderConfirmation)) {
+
             int rowsAffected = preparedStatement.executeUpdate();
 
             if (rowsAffected > 0) {
@@ -318,21 +300,35 @@ public class checkoutController {
         } catch (SQLException e) {
             // Handle any database-related errors
             Logger.getLogger(checkoutController.class.getName()).log(Level.SEVERE, null, e);
-        } finally {
-            // Close the database resources
-            try {
-                if (preparedStatement != null) {
-                    preparedStatement.close();
-                }
-                if (connection != null) {
-                    connection.close();
-                }
-            } catch (SQLException e) {
-                // Handle errors during resource closing
-                Logger.getLogger(checkoutController.class.getName()).log(Level.SEVERE, null, e);
-            }
         }
     }
+
+    private Connection establishDatabaseConnection() throws SQLException {
+        String jdbcUrl = "jdbc:mysql://localhost:3306/autoelite";
+        String dbUsername = "root";
+        String dbPassword = "";
+        return DriverManager.getConnection(jdbcUrl, dbUsername, dbPassword);
+    }
+
+    private PreparedStatement createInsertPreparedStatement(Connection connection, String firstName, String lastName, String email, String phone, String address, String city, String postal, String region, String country, double totalPrice, String orderConfirmation) throws SQLException {
+        String insertQuery = "INSERT INTO orders (first_name, last_name, email, phone, address, city, postal, region, country, total_price, order_confirmation) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+        PreparedStatement preparedStatement = connection.prepareStatement(insertQuery);
+
+        preparedStatement.setString(1, firstName);
+        preparedStatement.setString(2, lastName);
+        preparedStatement.setString(3, email);
+        preparedStatement.setString(4, phone);
+        preparedStatement.setString(5, address);
+        preparedStatement.setString(6, city);
+        preparedStatement.setString(7, postal);
+        preparedStatement.setString(8, region);
+        preparedStatement.setString(9, country);
+        preparedStatement.setDouble(10, totalPrice);
+        preparedStatement.setString(11, orderConfirmation);
+
+        return preparedStatement;
+    }
+
 
     private void displayOrderConfirmation(String orderConfirmation) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);

@@ -9,11 +9,11 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane styleClass="black-bg" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane styleClass="black-bg" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.autoeliteproject.accountController">
    <top>
       <VBox BorderPane.alignment="CENTER">
          <children>
-            <fx:include source="navbar_loggedin.fxml" />
+            <fx:include source="navbar_logged.fxml" />
             <fx:include source="navbar-account.fxml" />
          </children></VBox>
    </top>
@@ -24,22 +24,22 @@
                <children>
                   <ImageView fitHeight="124.0" fitWidth="158.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@images/usericon.png" />
+                        <Image url="@images/icons/usericon.png" />
                      </image>
                   </ImageView>
-                  <TextField promptText="First Name" styleClass="text-field-accountinfo" stylesheets="@style.css" />
-                  <TextField promptText="Username" styleClass="text-field-accountinfo" stylesheets="@style.css" />
-                  <TextField promptText="Email Address" styleClass="text-field-accountinfo" stylesheets="@style.css" />
-                  <Button mnemonicParsing="false" styleClass="delete-account-button" stylesheets="@style.css" text="Log Out" />
+                  <TextField fx:id="firstname" promptText="First Name" styleClass="text-field-accountinfo" stylesheets="@style.css" />
+                  <TextField fx:id="username" promptText="Username" styleClass="text-field-accountinfo" stylesheets="@style.css" />
+                  <TextField fx:id="email" promptText="Email Address" styleClass="text-field-accountinfo" stylesheets="@style.css" />
+                  <Button fx:id="logout" mnemonicParsing="false" styleClass="delete-account-button" stylesheets="@style.css" text="Log Out" />
                </children>
             </VBox>
             <VBox alignment="CENTER_RIGHT" prefHeight="400.0" prefWidth="234.0" spacing="20.0">
                <children>
                   <ImageView fitHeight="124.0" fitWidth="158.0" pickOnBounds="true" preserveRatio="true" />
-                  <TextField promptText="Last Name" styleClass="text-field-accountinfo" stylesheets="@style.css" />
-                  <PasswordField promptText="Password" styleClass="text-field-accountinfo" stylesheets="@style.css" />
-                  <TextField promptText="Phone Number" styleClass="text-field-accountinfo" stylesheets="@style.css" />
-                  <Button mnemonicParsing="false" styleClass="update-account-button" stylesheets="@style.css" text="Update" />
+                  <TextField fx:id="lastname" promptText="Last Name" styleClass="text-field-accountinfo" stylesheets="@style.css" />
+                  <PasswordField fx:id="password" promptText="Password" styleClass="text-field-accountinfo" stylesheets="@style.css" />
+                  <TextField fx:id="phone" promptText="Phone Number" styleClass="text-field-accountinfo" stylesheets="@style.css" />
+                  <Button fx:id="update" mnemonicParsing="false" onAction="#handleUpdateButton" styleClass="update-account-button" stylesheets="@style.css" text="Update" />
                </children>
             </VBox>
          </children>

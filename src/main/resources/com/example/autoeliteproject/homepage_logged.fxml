@@ -14,7 +14,7 @@
       <VBox prefHeight="0.0" prefWidth="1605.0" BorderPane.alignment="CENTER">
          <children>
             <fx:include source="infotop.fxml" />
-            <fx:include source="navbar.fxml" />
+            <fx:include source="navbar_logged.fxml" />
          </children></VBox>
    </top>
    <center>

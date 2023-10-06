@@ -2,63 +2,26 @@ package com.example.autoeliteproject;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.text.Text;
-import javafx.stage.Modality;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
-
-import java.io.IOException;
 
 public class CardetailController {
 
     @FXML
-    private Label bodytype;
+    private Label makeName, makeName2, modelName, modelName2, color, bodytype, condition, price, transmission, year;
 
     @FXML
-    private Button buynowBtn;
-
-    @FXML
-    private Label color;
-
-    @FXML
-    private Label condition;
-
-    @FXML
-    private Button contactcsBtn;
+    private Button buynowBtn, contactcsBtn;
 
     @FXML
     private Text description;
 
     @FXML
     private ImageView imagecar;
-
-    @FXML
-    private Label makeName;
-
-    @FXML
-    private Label makeName2;
-
-    @FXML
-    private Label modelName;
-
-    @FXML
-    private Label modelName2;
-
-    @FXML
-    private Label price;
-
-    @FXML
-    private Label transmission;
-
-    @FXML
-    private Label year;
 
     private Car selectedCar; // Store the selected car
 

@@ -1,5 +1,8 @@
 package com.example.autoeliteproject;
 
+import com.example.autoeliteproject.AuthenticationService;
+import com.example.autoeliteproject.SceneLoader;
+import com.example.autoeliteproject.SceneNames;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
@@ -49,7 +52,7 @@ public class loginController {
             if (authService.authenticate(username, password)) {
                 showAlert(Alert.AlertType.INFORMATION, "Login Success", "Welcome", "You have successfully logged in.");
                 clearFields();
-                SceneLoader.loadScene(SceneNames.HOMEPAGE_LOGGED_IN, (Stage) loginnowBtn.getScene().getWindow());
+                SceneLoader.loadScene(SceneNames.HOMEPAGE_LOGGED, (Stage) loginnowBtn.getScene().getWindow());
             } else {
                 showAlert(Alert.AlertType.ERROR, "Login Failed", "Authentication Error", "Invalid username or password.");
             }

@@ -1,7 +1,5 @@
 package com.example.autoeliteproject;
 
-import javafx.scene.image.Image;
-
 public class Car {
     private String carName;
     private String carModel;

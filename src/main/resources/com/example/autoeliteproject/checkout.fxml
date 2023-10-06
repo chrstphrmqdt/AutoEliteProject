@@ -1,22 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.RadioButton?>
-<?import javafx.scene.control.ScrollPane?>
-<?import javafx.scene.control.Separator?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
-<?import javafx.scene.text.TextFlow?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<BorderPane xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.autoeliteproject.checkoutController">
+<BorderPane xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.autoeliteproject.checkoutController">
    <top>
       <fx:include source="navbar.fxml" />
    </top>
@@ -31,16 +21,16 @@
                            <children>
                               <Label text="Contact">
                                  <font>
-                                    <Font size="24.0" />
+                                    <Font name="System Bold" size="27.0" />
                                  </font>
                               </Label>
                               <TextField fx:id="email" prefHeight="4.0" prefWidth="557.0" promptText="Email" styleClass="text-field-checkout" stylesheets="@style.css" />
                               <Label text="Delivery">
                                  <font>
-                                    <Font size="24.0" />
+                                    <Font name="System Bold" size="27.0" />
                                  </font>
                               </Label>
-                              <TextField fx:id="country" promptText="Country/Region" styleClass="text-field-checkout" stylesheets="@style.css" />
+                              <TextField fx:id="country" promptText="Country" styleClass="text-field-checkout" stylesheets="@style.css" />
                               <HBox prefHeight="25.0" prefWidth="242.0" spacing="50.0">
                                  <children>
                                     <TextField fx:id="firstname" prefHeight="25.0" prefWidth="174.0" promptText="First name" styleClass="text-field-checkout" stylesheets="@style.css" />
@@ -57,79 +47,24 @@
                               </HBox>
                               <TextField fx:id="region" prefHeight="37.0" prefWidth="307.0" promptText="Region" styleClass="text-field-checkout" stylesheets="@style.css" />
                               <TextField fx:id="phone" promptText="Phone" styleClass="text-field-checkout" stylesheets="@style.css" />
-                              <Label text="Shipping method">
-                                 <font>
-                                    <Font size="24.0" />
-                                 </font>
-                              </Label>
-                              <VBox prefHeight="200.0" prefWidth="623.0">
-                                 <children>
-                                    <HBox alignment="CENTER_LEFT" prefHeight="17.0" prefWidth="619.0">
-                                       <children>
-                                          <RadioButton fx:id="shipping1" mnemonicParsing="false" onAction="#initialize" prefHeight="20.0" prefWidth="205.0" stylesheets="@style.css" text="Open Carrier Transport">
-                                             <font>
-                                                <Font name="System Bold" size="14.0" />
-                                             </font>
-                                          </RadioButton>
-                                          <RadioButton fx:id="shipping2" mnemonicParsing="false" onAction="#initialize" prefHeight="20.0" prefWidth="200.0" text="Enclosed Carrier Transport">
-                                             <font>
-                                                <Font name="System Bold" size="14.0" />
-                                             </font>
-                                          </RadioButton>
-                                          <RadioButton fx:id="shipping3" mnemonicParsing="false" onAction="#initialize" prefHeight="20.0" prefWidth="154.0" text="Expedited Shipping">
-                                             <font>
-                                                <Font name="System Bold" size="14.0" />
-                                             </font>
-                                          </RadioButton>
-                                       </children>
-                                    </HBox>
-                                    <HBox alignment="CENTER_LEFT" prefHeight="39.0" prefWidth="557.0" spacing="50.0">
-                                       <children>
-                                          <TextFlow prefHeight="37.0" prefWidth="200.0">
-                                             <children>
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Your car will be transported on an open carrier, similar to other vehicles on the road. This method is cost-effective and suitable for most cars. Estimated delivery within 7-10 business days." />
-                                             </children>
-                                          </TextFlow>
-                                          <TextFlow prefHeight="37.0" prefWidth="200.0">
-                                             <children>
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="For added protection, your car will be shipped in an enclosed carrier, shielding it from the elements and road debris. Recommended for high-value or classic cars. Estimated delivery within 5-7 business days." />
-                                             </children>
-                                          </TextFlow>
-                                          <TextFlow prefHeight="37.0" prefWidth="200.0">
-                                             <children>
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Need your car in a hurry? Opt for our expedited service, ensuring quicker delivery within 2-3 business days. Available for open and enclosed carrier transport." wrappingWidth="469.833984375" />
-                                             </children>
-                                          </TextFlow>
-                                       </children>
-                                    </HBox>
-                                 </children>
-                              </VBox>
                            </children>
                         </VBox>
                         <Separator orientation="VERTICAL" prefHeight="885.0" prefWidth="104.0" />
-                        <VBox alignment="CENTER_LEFT" spacing="15.0">
+                        <VBox fillWidth="false" spacing="25.0">
                            <children>
                               <Label text="Payment">
                                  <font>
-                                    <Font size="26.0" />
+                                    <Font name="System Bold" size="27.0" />
                                  </font>
                               </Label>
                               <Label text="All transactions are secure and encrypted." />
-                              <HBox alignment="CENTER_LEFT">
-                                 <children>
-                                    <RadioButton fx:id="cashpayment" mnemonicParsing="false" text="Cash">
-                                       <font>
-                                          <Font size="18.0" />
-                                       </font>
-                                    </RadioButton>
-                                 </children>
-                              </HBox>
+                              <HBox alignment="CENTER_LEFT" />
                               <VBox spacing="15.0">
                                  <children>
                                     <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="497.0" spacing="50.0" />
                                  </children>
                               </VBox>
-                              <HBox alignment="CENTER_LEFT" spacing="20.0">
+                              <HBox alignment="CENTER_LEFT" spacing="10.0">
                                  <children>
                                     <ImageView fx:id="imagecar" fitHeight="132.0" fitWidth="193.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
@@ -156,68 +91,71 @@
                                     <Insets />
                                  </VBox.margin>
                               </HBox>
-                              <HBox alignment="CENTER_LEFT" spacing="300.0">
+                              <HBox spacing="300.0">
                                  <children>
-                                    <VBox alignment="CENTER_LEFT">
+                                    <VBox spacing="20.0">
                                        <children>
-                                          <Label text="Subtotal -">
-                                             <font>
-                                                <Font size="14.0" />
-                                             </font>
-                                          </Label>
+                                          <VBox alignment="CENTER_LEFT">
+                                             <children>
+                                                <Label text="Subtotal -">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <VBox alignment="CENTER_LEFT">
+                                             <children>
+                                                <Label text="Tax (10%)">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <VBox alignment="CENTER_LEFT">
+                                             <children>
+                                                <Label text="Total">
+                                                   <font>
+                                                      <Font size="24.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
                                        </children>
                                     </VBox>
-                                    <VBox alignment="CENTER_LEFT">
+                                    <VBox spacing="20.0">
                                        <children>
-                                          <Label fx:id="subtotalprice" text="₱1,583,000">
-                                             <font>
-                                                <Font name="System Bold Italic" size="14.0" />
-                                             </font>
-                                          </Label>
-                                       </children>
-                                    </VBox>
-                                 </children>
-                              </HBox>
-                              <HBox alignment="CENTER_LEFT" spacing="300.0">
-                                 <children>
-                                    <VBox alignment="CENTER_LEFT">
-                                       <children>
-                                          <Label text="Shipping - ">
-                                             <font>
-                                                <Font size="14.0" />
-                                             </font>
-                                          </Label>
-                                       </children>
-                                    </VBox>
-                                    <VBox alignment="CENTER_LEFT">
-                                       <children>
-                                          <Label fx:id="shippingfee" text="00.00">
-                                             <font>
-                                                <Font name="System Bold Italic" size="14.0" />
-                                             </font>
-                                          </Label>
-                                       </children>
-                                    </VBox>
-                                 </children>
-                              </HBox>
-                              <HBox alignment="CENTER_LEFT" spacing="300.0">
-                                 <children>
-                                    <VBox alignment="CENTER_LEFT">
-                                       <children>
-                                          <Label text="Total">
-                                             <font>
-                                                <Font size="24.0" />
-                                             </font>
-                                          </Label>
-                                       </children>
-                                    </VBox>
-                                    <VBox alignment="CENTER_LEFT">
-                                       <children>
-                                          <Label fx:id="totalprice" text="00.0">
-                                             <font>
-                                                <Font name="System Bold Italic" size="14.0" />
-                                             </font>
-                                          </Label>
+                                          <VBox alignment="CENTER_LEFT">
+                                             <children>
+                                                <Label fx:id="subtotalprice" text="₱1,583,000">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="14.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets />
+                                                   </VBox.margin>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <VBox alignment="CENTER_LEFT">
+                                             <children>
+                                                <Label fx:id="taxLabel" text="00.00">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <VBox alignment="CENTER_LEFT">
+                                             <children>
+                                                <Label fx:id="totalprice" text="00.0">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
                                        </children>
                                     </VBox>
                                  </children>

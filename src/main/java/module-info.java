@@ -6,4 +6,5 @@ module com.example.autoeliteproject {
 
     opens com.example.autoeliteproject to javafx.fxml;
     exports com.example.autoeliteproject;
+
 }

@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
@@ -48,7 +49,7 @@ public class viewcarsController implements Initializable {
         hondaCivic.setCarName("Honda");
         hondaCivic.setcarModel("Civic");
         hondaCivic.setCarPrice("₱ 1,115,000");
-        hondaCivic.setCarImage("/images/honda-civic/honda-civic.png");
+        hondaCivic.setCarImage("/com/example/autoeliteproject/images/cars/Honda Civic/honda-civic.png");
         hondaCivic.setBodytype("Sedan");
         hondaCivic.setColor("Red");
         hondaCivic.setCondition("Brand New");
@@ -57,25 +58,11 @@ public class viewcarsController implements Initializable {
         hondaCivic.setTransmission("Automatic");
         carsview.add(hondaCivic);
 
-        Car hondaCity = new Car();
-        hondaCity.setCarName("Honda");
-        hondaCity.setcarModel("City");
-        hondaCity.setCarPrice("₱ 820,000");
-        hondaCity.setCarImage("/images/honda-city/city.png");
-        // do the same thing here just like what you did above
-        hondaCity.setBodytype("Sedan");
-        hondaCity.setColor("Silver");
-        hondaCity.setCondition("Brand New");
-        hondaCity.setDescription("The Honda City is a subcompact car which has been produced by the Japanese manufacturer Honda since 1981. Originally made for the Japanese, European and Australasian markets, the City 3-door hatchback was retired in 1994 after the second generation.");
-        hondaCity.setYear("2023");
-        hondaCity.setTransmission("Automatic");
-        carsview.add(hondaCity);
-
         Car toyotaWigo = new Car();
         toyotaWigo.setCarName("Toyota");
         toyotaWigo.setcarModel("Wigo");
         toyotaWigo.setCarPrice("₱ 568,000");
-        toyotaWigo.setCarImage("/images/Toyota Wigo/wigo2.png");
+        toyotaWigo.setCarImage("/com/example/autoeliteproject/images/cars/Toyota-wigo/wigo2.png");
         toyotaWigo.setBodytype("Hatchback");
         toyotaWigo.setColor("Orange");
         toyotaWigo.setCondition("Brand New");
@@ -88,7 +75,7 @@ public class viewcarsController implements Initializable {
         toyotaVios.setCarName("Toyota");
         toyotaVios.setcarModel("Vios");
         toyotaVios.setCarPrice("₱ 671,000");
-        toyotaVios.setCarImage("/images/toyota-vios/toyota-vios.jpg");
+        toyotaVios.setCarImage("/com/example/autoeliteproject/images/cars/Toyota-vios/vios2.png");
         toyotaVios.setBodytype("Sedan");
         toyotaVios.setColor("Red");
         toyotaVios.setCondition("Brand New");
@@ -101,7 +88,7 @@ public class viewcarsController implements Initializable {
         mitsubishiMontero.setCarName("Mitsubishi");
         mitsubishiMontero.setcarModel("Montero");
         mitsubishiMontero.setCarPrice("₱ 1,769,000");
-        mitsubishiMontero.setCarImage("/images/Montero/mitsu 2.png");
+        mitsubishiMontero.setCarImage("/com/example/autoeliteproject/images/cars/mitsubishi-monter/mitsu 2.png");
         mitsubishiMontero.setBodytype("SUV");
         mitsubishiMontero.setColor("White");
         mitsubishiMontero.setCondition("Brand New");
@@ -115,7 +102,7 @@ public class viewcarsController implements Initializable {
         mitshubishiMirage.setCarName("Mitsubishi");
         mitshubishiMirage.setcarModel("Mirage");
         mitshubishiMirage.setCarPrice("₱ 704,000");
-        mitshubishiMirage.setCarImage("/images/mitsubishi-mirage/mirage.png");
+        mitshubishiMirage.setCarImage("/com/example/autoeliteproject/images/cars/mitsubishi-mirage/mirage.png");
         mitshubishiMirage.setBodytype("Hatchback");
         mitshubishiMirage.setColor("Red");
         mitshubishiMirage.setCondition("Brand New");
@@ -128,7 +115,7 @@ public class viewcarsController implements Initializable {
         fordRanger.setCarName("Ford");
         fordRanger.setcarModel("Ranger");
         fordRanger.setCarPrice("₱ 1,032,000");
-        fordRanger.setCarImage("/images/ford-ranger/ranger.png");
+        fordRanger.setCarImage("/com/example/autoeliteproject/images/cars/ford-ranger/ranger.png");
         fordRanger.setBodytype("Pickup");
         fordRanger.setColor("Red");
         fordRanger.setCondition("Brand New");
@@ -141,7 +128,7 @@ public class viewcarsController implements Initializable {
         fordEverest.setCarName("Ford");
         fordEverest.setcarModel("Everest");
         fordEverest.setCarPrice("₱ 1,738,000");
-        fordEverest.setCarImage("/images/ford-everest/everest.png");
+        fordEverest.setCarImage("/com/example/autoeliteproject/images/cars/ford-everest/everest.png");
         fordEverest.setBodytype("SUV");
         fordEverest.setColor("Blue");
         fordEverest.setCondition("Brand New");
@@ -150,8 +137,118 @@ public class viewcarsController implements Initializable {
         fordEverest.setTransmission("Automatic");
         carsview.add(fordEverest);
 
-        // Initialize the UI with all cars
+        // add more honda cars
+        Car hondaBrio = new Car();
+        hondaBrio.setCarName("Honda");
+        hondaBrio.setcarModel("Brio");
+        hondaBrio.setCarPrice("₱ 601,000");
+        hondaBrio.setCarImage("/com/example/autoeliteproject/images/cars/honda-brio/honda brio.png");
+        hondaBrio.setBodytype("Hatchback");
+        hondaBrio.setColor("Blue");
+        hondaBrio.setCondition("Brand New");
+        hondaBrio.setDescription("The Honda Brio is a city car, later a subcompact car produced by Honda and sold in the Philippines, India, Indonesia, Malaysia, Thailand, South Africa, Vietnam and the Philippines. The car was introduced in 2011.");
+        hondaBrio.setYear("2023");
+        hondaBrio.setTransmission("Automatic");
+        carsview.add(hondaBrio);
+
+        Car hondaBRV = new Car();
+        hondaBRV.setCarName("Honda");
+        hondaBRV.setcarModel("BRV");
+        hondaBRV.setCarPrice("₱ 1,038,000");
+        hondaBRV.setCarImage("/com/example/autoeliteproject/images/cars/honda-brv/brv.png");
+        hondaBRV.setBodytype("SUV");
+        hondaBRV.setColor("Red");
+        hondaBRV.setCondition("Brand New");
+        hondaBRV.setDescription("The Honda BR-V is a subcompact crossover SUV which has been manufactured by Honda since 2016. The car shares its platform with the second generation Mobilio, which is based on the lengthened Brio platform.");
+        hondaBRV.setYear("2023");
+        hondaBRV.setTransmission("Automatic");
+        carsview.add(hondaBRV);
+
+        Car hondaCity = new Car();
+        hondaCity.setCarName("Honda");
+        hondaCity.setcarModel("City");
+        hondaCity.setCarPrice("₱ 1,115,000");
+        hondaCity.setCarImage("/com/example/autoeliteproject/images/cars/honda-city/honda-city.png");
+        hondaCity.setBodytype("Sedan");
+        hondaCity.setColor("White");
+        hondaCity.setCondition("Brand New");
+        hondaCity.setDescription("The Honda City is a subcompact car which has been produced by the Japanese manufacturer Honda since 1981. Originally made for the Japanese, European and Australasian markets, the City was retired in 1994 after the second generation.");
+
+        // add more toyota cars
+
+       Car toyotaFortuner = new Car();
+        toyotaFortuner.setCarName("Toyota");
+        toyotaFortuner.setcarModel("Fortuner");
+        toyotaFortuner.setCarPrice("₱ 1,633,000");
+        toyotaFortuner.setCarImage("/com/example/autoeliteproject/images/cars/toyota-fortuner/fortuner.png");
+        toyotaFortuner.setBodytype("SUV");
+        toyotaFortuner.setColor("White");
+        toyotaFortuner.setCondition("Brand New");
+        toyotaFortuner.setDescription("The Toyota Fortuner, also known as the Toyota SW4, is a mid-size SUV manufactured by Japanese automobile manufacturer Toyota. The Fortuner is built on the Hilux pickup truck platform.");
+        toyotaFortuner.setYear("2023");
+        toyotaFortuner.setTransmission("Automatic");
+        carsview.add(toyotaFortuner);
+
+        Car toyotaInnova = new Car();
+        toyotaInnova.setCarName("Toyota");
+        toyotaInnova.setcarModel("Innova");
+        toyotaInnova.setCarPrice("₱ 1,186,000");
+        toyotaInnova.setCarImage("/com/example/autoeliteproject/images/cars/toyota-innova/innova.png");
+        toyotaInnova.setBodytype("SUV");
+        toyotaInnova.setColor("White");
+        toyotaInnova.setCondition("Brand New");
+        toyotaInnova.setDescription("The Toyota Innova is a compact MPV manufactured by the Japanese automaker Toyota. It is first produced in Indonesia under supervision by Toyota Astra Motor since 2004 and has been manufactured in other countries as well.");
+        toyotaInnova.setYear("2023");
+        toyotaInnova.setTransmission("Automatic");
+        carsview.add(toyotaInnova);
+
+        Car toyotaRush = new Car();
+        toyotaRush.setCarName("Toyota");
+        toyotaRush.setcarModel("Rush");
+        toyotaRush.setCarPrice("₱ 1,100,000");
+        toyotaRush.setCarImage("/com/example/autoeliteproject/images/cars/toyota-rush/rush.png");
+        toyotaRush.setBodytype("SUV");
+        toyotaRush.setColor("Red");
+        toyotaRush.setCondition("Brand New");
+        toyotaRush.setDescription("The Toyota Rush is a mini SUV that is developed by the Japanese car manufacturer Toyota. It features three rows of seats and is available in rear-wheel drive or four-wheel drive.");
         updateUIWithFilteredCars(carsview);
+
+        // add more Ford cars
+        Car fordEcosport = new Car();
+        fordEcosport.setCarName("Ford");
+        fordEcosport.setcarModel("Ecosport");
+        fordEcosport.setCarPrice("₱ 1,190,000");
+        fordEcosport.setCarImage("/com/example/autoeliteproject/images/cars/ford-ecosport/ecosport.png");
+        fordEcosport.setBodytype("SUV");
+        fordEcosport.setColor("Blue");
+        fordEcosport.setCondition("Brand New");
+        fordEcosport.setDescription("The Ford EcoSport is a subcompact crossover SUV, originally built in Brazil by Ford Brazil since 2003, at the Camaçari plant. A second generation concept model was launched in 2012, and is also assembled in new factories in India, Thailand, Russia and Romania.");
+        fordEcosport.setYear("2023");
+        fordEcosport.setTransmission("Automatic");
+        carsview.add(fordEcosport);
+
+        Car fordTerritory = new Car();
+        fordTerritory.setCarName("Ford");
+        fordTerritory.setcarModel("Territory");
+        fordTerritory.setCarPrice("₱ 1,277,000");
+        fordTerritory.setCarImage("/com/example/autoeliteproject/images/cars/ford-territory/territory.png");
+        fordTerritory.setBodytype("SUV");
+        fordTerritory.setColor("White");
+        fordTerritory.setCondition("Brand New");
+        fordTerritory.setDescription("The Ford Territory is a crossover SUV built by Ford Australia that was introduced in April 2004 and produced until October 2016. It is based on the EA169 platform introduced by the 2002 BA series Falcon, and its internal project codename was E265.");
+        fordTerritory.setYear("2023");
+        fordTerritory.setTransmission("Automatic");
+        carsview.add(fordTerritory);
+
+        Car fordEscape = new Car();
+        fordEscape.setCarName("Ford");
+        fordEscape.setcarModel("Escape");
+        fordEscape.setCarPrice("₱ 1,490,000");
+        fordEscape.setCarImage("/com/example/autoeliteproject/images/cars/ford-escape/escape.png");
+        fordEscape.setBodytype("SUV");
+        fordEscape.setColor("White");
+        fordEscape.setCondition("Brand New");
+        fordEscape.setDescription("The Ford Escape is a compact crossover vehicle sold by Ford since 2000 over four generations. Ford released the original model in 2000 for the 2001 model year. Mainstream production of the first generation Escape/Tribute ended in late 2006.");
     }
 
     private void updateUIWithFilteredCars(List<Car> filteredCars) {

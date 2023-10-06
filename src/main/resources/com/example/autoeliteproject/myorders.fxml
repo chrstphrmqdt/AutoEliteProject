@@ -11,7 +11,7 @@
    <top>
       <VBox BorderPane.alignment="CENTER">
          <children>
-            <fx:include source="navbar_loggedin.fxml" />
+            <fx:include source="navbar_logged.fxml" />
             <fx:include source="navbar-account.fxml" />
          </children></VBox>
    </top>
